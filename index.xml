@@ -5,14 +5,14 @@
     <link>https://blog.huzhiwen.top/</link>
     <description>Recent content on Huzw&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Sun, 21 Jan 2024 19:14:26 +0800</lastBuildDate>
     <atom:link href="https://blog.huzhiwen.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>截图</title>
-      <link>https://blog.huzhiwen.top/posts/%E7%9B%B8%E5%86%8C/%E6%88%AA%E5%9B%BE/</link>
+      <link>https://blog.huzhiwen.top/posts/photo/%E6%88%AA%E5%9B%BE/</link>
       <pubDate>Sun, 21 Jan 2024 19:14:26 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E7%9B%B8%E5%86%8C/%E6%88%AA%E5%9B%BE/</guid>
+      <guid>https://blog.huzhiwen.top/posts/photo/%E6%88%AA%E5%9B%BE/</guid>
       <description></description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html lang="en">
@@ -62,9 +62,11 @@
      "viewerGalleryTHeight": 40
 }'>
     
+
 <a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121191458.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121191458.png"></a>
- 
- 
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121204530.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121204530.png"></a>
+
+
 
 </div>
 </body>
@@ -73,9 +75,9 @@
     </item>
     <item>
       <title>童年美食</title>
-      <link>https://blog.huzhiwen.top/posts/%E7%9B%B8%E5%86%8C/%E7%AB%A5%E5%B9%B4%E7%BE%8E%E9%A3%9F/</link>
+      <link>https://blog.huzhiwen.top/posts/photo/%E7%AB%A5%E5%B9%B4%E7%BE%8E%E9%A3%9F/</link>
       <pubDate>Sun, 21 Jan 2024 15:26:50 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E7%9B%B8%E5%86%8C/%E7%AB%A5%E5%B9%B4%E7%BE%8E%E9%A3%9F/</guid>
+      <guid>https://blog.huzhiwen.top/posts/photo/%E7%AB%A5%E5%B9%B4%E7%BE%8E%E9%A3%9F/</guid>
       <description></description>
       <content:encoded><![CDATA[<p>美食也是美好回忆
 <!DOCTYPE html>
@@ -156,9 +158,9 @@
     </item>
     <item>
       <title>快速写博客流程</title>
-      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</link>
+      <link>https://blog.huzhiwen.top/posts/essay/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Sun, 21 Jan 2024 14:11:34 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</guid>
+      <guid>https://blog.huzhiwen.top/posts/essay/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</guid>
       <description></description>
       <content:encoded><![CDATA[<h2 id="hugo-配置">hugo 配置</h2>
 <p>主要在hugo博客的根目录新建两个文件夹一个用来存储obsidian需要用到的模板文件default.md，一个用来存放新建宏的时候用到的JS文件，用来获取弹窗输入的文本标题，进行每次新建一个模板预设好的md文件，并且每个文件在一个独立的文件夹，到时候可以设置文章缩略图，在这个hugo主题blowfish上的有效。</p>
@@ -250,9 +252,9 @@
     </item>
     <item>
       <title>Linux常用命令</title>
-      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://blog.huzhiwen.top/posts/essay/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sun, 21 Jan 2024 14:06:29 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://blog.huzhiwen.top/posts/essay/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description></description>
       <content:encoded><![CDATA[<h2 id="命令历史查询">命令历史查询</h2>
 <ul>
@@ -478,9 +480,9 @@
     </item>
     <item>
       <title>碎碎念</title>
-      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+      <link>https://blog.huzhiwen.top/posts/essay/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
       <pubDate>Sun, 21 Jan 2024 14:01:20 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
+      <guid>https://blog.huzhiwen.top/posts/essay/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
       <description></description>
       <content:encoded><![CDATA[<ul>
 <li>人都喜欢用优惠券买东西，但是如果一个女的发现一个男的用优惠券带她去餐厅，多少有点觉得不舒服，觉得自己被定义为廉价了，也许是觉得定义廉价的权利应该属于自己。可以主动选择用优惠券买便宜东西，但是被别人送便宜东西就觉得不自在了。但是这样用金钱自我衡量，也是一种物化自己对嘛？难道这种物化出自于自己就是可行的，所谓的男性不能物化女性，只是在强调叫价权属于自己吧。</li>
@@ -503,9 +505,9 @@
     </item>
     <item>
       <title>日本电影旬报年度十佳1990 2022</title>
-      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1%E6%97%AC%E6%8A%A5%E5%B9%B4%E5%BA%A6%E5%8D%81%E4%BD%B31990-2022/</link>
+      <link>https://blog.huzhiwen.top/posts/essay/%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1%E6%97%AC%E6%8A%A5%E5%B9%B4%E5%BA%A6%E5%8D%81%E4%BD%B31990-2022/</link>
       <pubDate>Sun, 21 Jan 2024 13:57:23 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1%E6%97%AC%E6%8A%A5%E5%B9%B4%E5%BA%A6%E5%8D%81%E4%BD%B31990-2022/</guid>
+      <guid>https://blog.huzhiwen.top/posts/essay/%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1%E6%97%AC%E6%8A%A5%E5%B9%B4%E5%BA%A6%E5%8D%81%E4%BD%B31990-2022/</guid>
       <description>来自电影旬报 2022 《惠子，凝视》三宅唱 《某个男人》石川庆 《在公交车站直到黎明》高桥伴明 《这里是亚美子》森井勇佑 《冬蔷薇》阪本顺治 《吃土的十二个月</description>
       <content:encoded><![CDATA[<h2 id="来自电影旬报">来自电影旬报</h2>
 <h3 id="2022">2022</h3>
@@ -940,9 +942,9 @@
     </item>
     <item>
       <title>3种方式添加hugo主题</title>
-      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/3%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0hugo%E4%B8%BB%E9%A2%98/</link>
+      <link>https://blog.huzhiwen.top/posts/essay/3%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0hugo%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 21 Jan 2024 13:47:14 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/3%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0hugo%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://blog.huzhiwen.top/posts/essay/3%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0hugo%E4%B8%BB%E9%A2%98/</guid>
       <description></description>
       <content:encoded><![CDATA[<h2 id="install-newsroom-theme">Install Newsroom Theme</h2>
 <p><strong>Note:</strong> Newsroom uses is styled in sass. Thefore, <strong>hugo-extended version</strong> must be installed on your system.</p>
@@ -998,9 +1000,9 @@
     </item>
     <item>
       <title>《随风而逝》  阿巴斯</title>
-      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D--%E9%98%BF%E5%B7%B4%E6%96%AF/</link>
+      <link>https://blog.huzhiwen.top/posts/essay/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D--%E9%98%BF%E5%B7%B4%E6%96%AF/</link>
       <pubDate>Sun, 21 Jan 2024 07:56:36 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D--%E9%98%BF%E5%B7%B4%E6%96%AF/</guid>
+      <guid>https://blog.huzhiwen.top/posts/essay/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D--%E9%98%BF%E5%B7%B4%E6%96%AF/</guid>
       <description></description>
       <content:encoded><![CDATA[<p>这样开车一天重复几趟上上下下，早就该知道那里信号不好，不如直接就在山顶上搭个帐篷呢哈哈，而且貌似每天最重要的就是接电话，跟小孩子聊天打探消息和花半天时间去买牛奶真的大可不必哈哈，真不如搭个帐篷，然后花点小钱，请那个孩子每天送点东西顺便打探下那个女的病情。</p>
 <p>看到他每天瞎忙，到处自然熟，坐下不到三分钟，茶水没喝就动起来了，觉得他好焦虑啊。这样在这里住几天，真不如直接花点钱给村里那个孩子，教他怎么拍照片，然后回去，等老人去世了，叫他给他打个电话，然后叫他去拍一手资料，反正也没别人在这里，还怕自己的新闻被人抢掉吗？</p>

@@ -5,14 +5,14 @@
     <link>https://blog.huzhiwen.top/tags/obsidian/</link>
     <description>Recent content in obsidian on Huzw&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Sun, 21 Jan 2024 14:11:34 +0800</lastBuildDate>
     <atom:link href="https://blog.huzhiwen.top/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>快速写博客流程</title>
-      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</link>
+      <link>https://blog.huzhiwen.top/posts/essay/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Sun, 21 Jan 2024 14:11:34 +0800</pubDate>
-      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</guid>
+      <guid>https://blog.huzhiwen.top/posts/essay/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</guid>
       <description></description>
       <content:encoded><![CDATA[<h2 id="hugo-配置">hugo 配置</h2>
 <p>主要在hugo博客的根目录新建两个文件夹一个用来存储obsidian需要用到的模板文件default.md，一个用来存放新建宏的时候用到的JS文件，用来获取弹窗输入的文本标题，进行每次新建一个模板预设好的md文件，并且每个文件在一个独立的文件夹，到时候可以设置文章缩略图，在这个hugo主题blowfish上的有效。</p>

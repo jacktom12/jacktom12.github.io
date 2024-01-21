@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📷相册 on Huzw&#39;s Blog</title>
+    <link>https://blog.huzhiwen.top/posts/photo/</link>
+    <description>Recent content in 📷相册 on Huzw&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 21 Jan 2024 19:14:26 +0800</lastBuildDate>
+    <atom:link href="https://blog.huzhiwen.top/posts/photo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>截图</title>
+      <link>https://blog.huzhiwen.top/posts/photo/%E6%88%AA%E5%9B%BE/</link>
+      <pubDate>Sun, 21 Jan 2024 19:14:26 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/photo/%E6%88%AA%E5%9B%BE/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js"></script>
+</head>
+<body>
+
+<div data-nanogallery2='{
+	 "thumbnailDisplayTransition":          "none",
+     "thumbnailDisplayTransitionDuration":  500,
+     "thumbnailDisplayInterval":            30,
+     "galleryDisplayTransition":            "none",
+     "galleryDisplayTransitionDuration":    500,
+     "galleryDisplayMode": "rows",
+     "thumbnailDisplayOutsideScreen": "false",
+     "eventsDebounceDelay": 10,
+     "thumbnailL1BorderHorizontal": 0,
+     "thumbnailL1BorderVertical": 0,
+     "thumbnailLabel": {
+        "titleFontSize": "0.6em"
+     },
+     "thumbnailHoverEffect2": "image_scale_1.00_1.10|label_backgroundColor_rgba(0,0,0,0)_rgba(255,255,255,0)",
+     "galleryTheme": {
+        "thumbnail": {
+            "borderRadius": "8px"
+        }
+     },
+     "thumbnailToolbarImage": {
+        "topLeft": "",
+        "topRight": "",
+        "bottomLeft": "",
+        "bottomRight": ""
+     },
+     "viewerToolbar":   {
+        "display": true,
+        "standard": "label"
+     },
+     "viewerTools":     {
+        "topLeft":    "pageCounter, playPauseButton",
+        "topRight":   "downloadButton, rotateLeft, zoomButton, fullscreenButton, closeButton"
+     },
+     "viewerGalleryTWidth": 40,
+     "viewerGalleryTHeight": 40
+}'>
+    
+
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121191458.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121191458.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121204530.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121204530.png"></a>
+
+
+
+</div>
+</body>
+</html>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>童年美食</title>
+      <link>https://blog.huzhiwen.top/posts/photo/%E7%AB%A5%E5%B9%B4%E7%BE%8E%E9%A3%9F/</link>
+      <pubDate>Sun, 21 Jan 2024 15:26:50 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/photo/%E7%AB%A5%E5%B9%B4%E7%BE%8E%E9%A3%9F/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>美食也是美好回忆
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js"></script>
+</head>
+<body>
+
+<div data-nanogallery2='{
+	 "thumbnailDisplayTransition":          "none",
+     "thumbnailDisplayTransitionDuration":  500,
+     "thumbnailDisplayInterval":            30,
+     "galleryDisplayTransition":            "none",
+     "galleryDisplayTransitionDuration":    500,
+     "galleryDisplayMode": "rows",
+     "thumbnailDisplayOutsideScreen": "false",
+     "eventsDebounceDelay": 10,
+     "thumbnailL1BorderHorizontal": 0,
+     "thumbnailL1BorderVertical": 0,
+     "thumbnailLabel": {
+        "titleFontSize": "0.6em"
+     },
+     "thumbnailHoverEffect2": "image_scale_1.00_1.10|label_backgroundColor_rgba(0,0,0,0)_rgba(255,255,255,0)",
+     "galleryTheme": {
+        "thumbnail": {
+            "borderRadius": "8px"
+        }
+     },
+     "thumbnailToolbarImage": {
+        "topLeft": "",
+        "topRight": "",
+        "bottomLeft": "",
+        "bottomRight": ""
+     },
+     "viewerToolbar":   {
+        "display": true,
+        "standard": "label"
+     },
+     "viewerTools":     {
+        "topLeft":    "pageCounter, playPauseButton",
+        "topRight":   "downloadButton, rotateLeft, zoomButton, fullscreenButton, closeButton"
+     },
+     "viewerGalleryTWidth": 40,
+     "viewerGalleryTHeight": 40
+}'>
+    
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153023.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153023.png">糖果子</a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153046.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153046.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153117.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153117.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153141.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153141.png">月饼</a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153204.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153204.png">粽子</a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153244.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153244.png">麦丽素</a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153322.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153322.png">果子</a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153351.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153351.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153411.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153411.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153430.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153430.png"></a>
+
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153504.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153504.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153529.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153529.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153552.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153552.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153621.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153621.png"></a>
+
+
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153642.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153642.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153658.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153658.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153724.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153724.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153756.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240121153756.png"></a>
+
+
+</div>
+</body>
+</html></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
