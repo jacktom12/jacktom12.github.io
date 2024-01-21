@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随笔 on Huzw&#39;s Blog</title>
+    <link>https://blog.huzhiwen.top/categories/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on Huzw&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 21 Jan 2024 14:11:34 +0800</lastBuildDate>
+    <atom:link href="https://blog.huzhiwen.top/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快速写博客流程</title>
+      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Sun, 21 Jan 2024 14:11:34 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h2 id="hugo-配置">hugo 配置</h2>
+<p>主要在hugo博客的根目录新建两个文件夹一个用来存储obsidian需要用到的模板文件default.md，一个用来存放新建宏的时候用到的JS文件，用来获取弹窗输入的文本标题，进行每次新建一个模板预设好的md文件，并且每个文件在一个独立的文件夹，到时候可以设置文章缩略图，在这个hugo主题blowfish上的有效。</p>
+<h3 id="defaultmd">default.md</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#39;{{VALUE:articleTitle}}&#39;
+</span></span><span class="line"><span class="cl">date = {{VALUE:articleTimestamp}}
+</span></span><span class="line"><span class="cl">draft = false
+</span></span><span class="line"><span class="cl">showReadingTime =  true
+</span></span><span class="line"><span class="cl">tags = [ &#34;&#34; ]
+</span></span><span class="line"><span class="cl">categories = [&#34;{{VALUE:articleCategory}}&#34;]
+</span></span><span class="line"><span class="cl">+++
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="create_new_postjs">create_new_post.js</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span><span class="nx">params</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">QuickAdd</span> <span class="o">=</span> <span class="nx">params</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kr">const</span> <span class="nx">title</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">QuickAdd</span><span class="p">.</span><span class="nx">quickAddApi</span><span class="p">.</span><span class="nx">inputPrompt</span><span class="p">(</span><span class="s2">&#34;博客标题&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kr">const</span> <span class="nx">category</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">QuickAdd</span><span class="p">.</span><span class="nx">quickAddApi</span><span class="p">.</span><span class="nx">checkboxPrompt</span><span class="p">([</span><span class="s2">&#34;计算机&#34;</span><span class="p">,</span> <span class="s2">&#34;随笔&#34;</span><span class="p">,</span> <span class="s2">&#34;娱乐&#34;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&#34;计算机&#34;</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">	 <span class="nx">QuickAdd</span><span class="p">.</span><span class="nx">variables</span><span class="p">[</span><span class="s2">&#34;articleTitle&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">title</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	 <span class="nx">QuickAdd</span><span class="p">.</span><span class="nx">variables</span><span class="p">[</span><span class="s2">&#34;articleCategory&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">category</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	  <span class="nx">QuickAdd</span><span class="p">.</span><span class="nx">variables</span><span class="p">[</span><span class="s2">&#34;articleTimestamp&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">QuickAdd</span><span class="p">.</span><span class="nx">quickAddApi</span><span class="p">.</span><span class="nx">date</span><span class="p">.</span><span class="nx">now</span><span class="p">(</span><span class="s1">&#39;YYYY-MM-DDTHH:mm:ssZ&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">QuickAdd</span><span class="p">.</span><span class="nx">variables</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="obsidian-设置">obsidian 设置</h2>
+<h3 id="新建宏macro">新建宏macro</h3>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240108213559.png" alt=""  />
+</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240108213357.png" alt=""  />
+</p>
+<h3 id="设置template">设置template</h3>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240108213827.png" alt=""  />
+</p>
+<hr>
+<p><code>最后可以设置下快捷键，就比较方便，不用每次都用hugo new命令了</code></p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240108214359.png" alt=""  />
+</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240108214115.png" alt=""  />
+</p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240108214228.png" alt=""  />
+</p>
+<h3 id="image-auto-upload插件">image auto upload插件</h3>
+<pre><code>PicGo软件把图片上传到图床后，直接在文章里进行粘贴外链图片地址。
+</code></pre>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240108214804.png" alt=""  />
+</p>
+<h2 id="picgo-设置">picGo 设置</h2>
+<p><code>下载地址 https://github.com/Molunerfinn/PicGo/releases</code></p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240108215903.png" alt=""  />
+</p>
+<p><code>https://cdn.jsdelivr.net/gh/[github用户名]/[仓库名]@main</code></p>
+<ul>
+<li>cdn.jsdelivr.net进行加速。</li>
+</ul>
+<hr>
+<p><code>最近又看到几个好玩的主题啊，好看的东西永远是没得到的哈哈。</code></p>
+<ul>
+<li><a href="https://irithys.com/hugo-migrate-ghost/">https://irithys.com/hugo-migrate-ghost/</a> ghost新主题</li>
+<li><a href="https://immmmm.com/">https://immmmm.com/</a> hugo的一个hello friend主题</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Linux常用命令</title>
+      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 21 Jan 2024 14:06:29 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h2 id="命令历史查询">命令历史查询</h2>
+<ul>
+<li>
+<p>清空命令历史 <code>history -c</code></p>
+</li>
+<li>
+<p>分页查看记录 <code>history | more</code></p>
+</li>
+<li>
+<p>查询出来记录后选中 :　<code>!323</code></p>
+</li>
+<li>
+<p>单条命令删除 <code>history -d 111</code></p>
+</li>
+<li>
+<p>查看最近五条命令 <code>history 5</code></p>
+</li>
+<li>
+<p>按条件查询命令 <code>history | grep nohup</code></p>
+</li>
+<li>
+<p>使用 <code>Ctrl + R</code> 搜索历史命令再按 <code>Ctrl + G</code> 退出搜索。
+<img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240109142947.png" alt=""  />
+</p>
+</li>
+<li>
+<p>4种方式快速查找上一条命令
+<img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240109143056.png" alt=""  />
+</p>
+</li>
+</ul>
+<h2 id="日志查询">日志查询</h2>
+<ul>
+<li>当直接去 grep 的时候，花费约 30ms<code>time (grep xx tracelog/xx.log.2020-11-02)</code></li>
+<li>tail 最后 10000 行日志 速度一般<code>time (tail -n10000 tracelog/rpc-server-digest.log.2020-11-02 | grep 21885857160436159747673092289)</code></li>
+<li>tac 命令可以反向对文件做输出，<code>time (tac tracelog/rpc-server-digest.log.2020-11-02 | grep -m1 21885857160436159747673092289)</code></li>
+<li><code>Q: tac 的全称是什么 A: cat &lt;-&gt; tac</code></li>
+</ul>
+<h2 id="less命令">less命令</h2>
+<ul>
+<li>查看进程信息并通过less分页显示<code>ps -ef | less</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">用ps -def | grep查找进程很方便，最后一行总是会grep自己。
+</span></span><span class="line"><span class="cl"> 用grep -v参数可以将grep命令排除掉，因此修改版本如下：
+</span></span><span class="line"><span class="cl"> 接在再用awk提取一下进程ID.
+</span></span><span class="line"><span class="cl"> ps -def | grep calibre | grep -v grep | awk &#39;{print $2}&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>shift + G</code> 命令到文件尾部 然后输入 _？_加上你要搜索的关键字例如 ？1213</li>
+<li>查看命令历史使用记录并通过less分页显示 <code>history | less</code>
+<ul>
+<li><code>ctrl b</code>后翻页,<code>ctrl f</code>前翻页，<code>enter</code>下一行，<code>空格键</code>下一页，<code>Q</code>退出</li>
+</ul>
+</li>
+<li>浏览多个文件<code>less log2013.log log2014.log</code>
+<ul>
+<li><em>按 n 向上查找关键字 shift+n 反向查找关键字</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="sed">sed</h2>
+<ul>
+<li><code>sed -n '5,10p' filename</code> 这样你就可以只查看文件的第5行到第10行。</li>
+<li><code>sed -n '/2014-12-17 16:17:20/,/2014-12-17 16:17:36/p' test.log</code>按照时间段</li>
+</ul>
+<h2 id="more">more</h2>
+<p>more命令是一个基于vi编辑器文本过滤器，它以全屏幕的方式按页显示文本文件的内容，支持vi中的关键字定位操作。more名单中内置了若干快捷键，常用的有H（获得帮助信息），Enter（向下翻滚一行），空格（向下滚动一屏），Q（退出命令）。more命令从前向后读取文件，因此在启动时就加载整个文件
+该命令一次显示一屏文本，满屏后停下来，并且在屏幕的底部出现一个提示信息，给出至今己显示的该文件的百分比：–More–（XX%)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">- more的语法：more 文件名
+</span></span><span class="line"><span class="cl">- Enter 向下n行，需要定义，默认为1行
+</span></span><span class="line"><span class="cl">- Ctrl f 向下滚动一屏
+</span></span><span class="line"><span class="cl">- 空格键 向下滚动一屏
+</span></span><span class="line"><span class="cl">- Ctrl b 返回上一屏
+</span></span><span class="line"><span class="cl">- = 输出当前行的行号
+</span></span><span class="line"><span class="cl">- :f 输出文件名和当前行的行号
+</span></span><span class="line"><span class="cl">- v 调用vi编辑器
+</span></span><span class="line"><span class="cl">- !命令 调用Shell，并执行命令
+</span></span><span class="line"><span class="cl">- q退出more
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="cat">cat</h2>
+<ul>
+<li>一次显示整个文件 :<code>$ cat filename</code></li>
+<li>从键盘创建一个文件 :<code>$cat &gt; filename</code> 以<code>ctrl+d</code>作为输入结束</li>
+<li>将几个文件合并为一个文件：<code>$cat file1 file2 &gt; file</code>只能创建新文件,不能编辑已有文件.</li>
+<li>将一个日志文件的内容追加到另外一个 :<code>$cat -n textfile1 &gt; textfile2</code></li>
+<li>清空一个日志文件:<code>$cat : &gt;textfile2</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">注意：&gt; 意思是创建，&gt;&gt;是追加。千万不要弄混了。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="head">head</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">命令格式: tail[必要参数][选择参数][文件]  
+</span></span><span class="line"><span class="cl">-f 循环读取  
+</span></span><span class="line"><span class="cl">-q 不显示处理信息  
+</span></span><span class="line"><span class="cl">-v 显示详细的处理信息  
+</span></span><span class="line"><span class="cl">-c&lt;数目&gt; 显示的字节数  
+</span></span><span class="line"><span class="cl">-n&lt;行数&gt; 显示行数  
+</span></span><span class="line"><span class="cl">-q, --quiet, --silent 从不输出给出文件名的首部  
+</span></span><span class="line"><span class="cl">-s, --sleep-interval=S 与-f合用,表示在每次反复的间隔休眠S秒
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>tail -n 10 test.log</code>查询日志尾部最后10行的日志;</li>
+<li><code>tail -n +10 test.log</code>查询10行之后的所有日志;</li>
+<li><code>tail -fn 1000 test.log</code>循环实时查看最后1000行记录(最常用的)</li>
+<li><code>tail -fn 1000 test.log | grep</code> 关键字</li>
+<li><code>tail -n +3 filename &gt; newfile</code>删除文件的前两行 写入新文件</li>
+<li><code>tail -n +1 made.txt made2.txt</code> 同时查看2个文档从第一行开始</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">==</span>&gt; made.txt &lt;<span class="o">==</span>
+</span></span><span class="line"><span class="cl">jskdajflkdsf
+</span></span><span class="line"><span class="cl">wejfoiwji<span class="p">&amp;</span>kldsjafkl
+</span></span><span class="line"><span class="cl"><span class="c1">##$%dsfasdf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; made2.txt &lt;<span class="o">==</span>
+</span></span><span class="line"><span class="cl">joiasjdofidsa
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Dataview <span class="o">(</span>inline field <span class="s1">&#39;=&gt; made.txt &lt;==
+</span></span></span><span class="line"><span class="cl"><span class="s1">jskdajflkdsf
+</span></span></span><span class="line"><span class="cl"><span class="s1">wejfoiwji&amp;kldsjafkl
+</span></span></span><span class="line"><span class="cl"><span class="s1">##$%dsfasdf
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">==&gt; made2.txt &lt;==
+</span></span></span><span class="line"><span class="cl"><span class="s1">joiasjdofidsa&#39;</span><span class="o">)</span>: Error: 
+</span></span><span class="line"><span class="cl">-- PARSING FAILED --------------------------------------------------
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&gt; <span class="m">1</span> <span class="p">|</span> <span class="o">=</span>&gt; made.txt &lt;<span class="o">==</span>
+</span></span><span class="line"><span class="cl">    <span class="p">|</span> ^
+</span></span><span class="line"><span class="cl">  <span class="m">2</span> <span class="p">|</span> jskdajflkdsf
+</span></span><span class="line"><span class="cl">  <span class="m">3</span> <span class="p">|</span> wejfoiwji<span class="p">&amp;</span>kldsjafkl
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Expected one of the following: 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;(&#39;</span>, <span class="s1">&#39;null&#39;</span>, boolean, date, duration, file link, list <span class="o">(</span><span class="s1">&#39;[1, 2, 3]&#39;</span><span class="o">)</span>, negated field, number, object <span class="o">(</span><span class="s1">&#39;{ a: 1, b: 2 }&#39;</span><span class="o">)</span>, string, variable
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="linux日志文件说明">linux日志文件说明</h2>
+<ul>
+<li><code>/var/log/message</code>系统启动后的信息和错误日志，是Red Hat Linux中最常用的日志之一</li>
+<li><code>/var/log/secure</code>与安全相关的日志信息</li>
+<li><code>/var/log/maillog</code>与邮件相关的日志信息</li>
+<li><code>/var/log/cron</code>与定时任务相关的日志信息</li>
+<li><code>/var/log/spooler</code>与UUCP和news设备相关的日志信息</li>
+<li><code>/var/log/boot.log</code>守护进程启动和停止相关的日志消息</li>
+<li><code>/var/log/wtmp</code>该日志文件永久记录每个用户登录、注销及系统的启动、停机的事件</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>碎碎念</title>
+      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+      <pubDate>Sun, 21 Jan 2024 14:01:20 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<ul>
+<li>人都喜欢用优惠券买东西，但是如果一个女的发现一个男的用优惠券带她去餐厅，多少有点觉得不舒服，觉得自己被定义为廉价了，也许是觉得定义廉价的权利应该属于自己。可以主动选择用优惠券买便宜东西，但是被别人送便宜东西就觉得不自在了。但是这样用金钱自我衡量，也是一种物化自己对嘛？难道这种物化出自于自己就是可行的，所谓的男性不能物化女性，只是在强调叫价权属于自己吧。</li>
+</ul>
+<hr>
+<ul>
+<li>Everybody is somebody, even a nobody.</li>
+<li>许多人一旦做了父母，就仿佛从来没经历过童年和成长</li>
+<li> 而成人世界则不然，除了自以为是，我觉得成人世界还在弥散着一种孤独与软弱。 比如阿默的祖父，他在强迫阿默做事时，严厉无比，并且还头头是道地对朋友讲叙教育后代的方式与方法。但当阿默被铁匠强硬地夺走练习簿时，他却只能默默无语地看着、忍受着，一言不发，眼睛中露出一份软弱和无所适从。他只能支配阿默，却保护不了阿默。</li>
+<li>呆在适合自己的地方才是最好的</li>
+<li>人的奇妙之处在于想法的彻底改变，有的时候连一瞬间都不需要</li>
+<li>一个人去看病，说我全身都痛，摸头头痛，摸肚子肚子痛，最后发现你的身体没毛病，是你的手指破了，你的身体没病，是你的精神出问题了。</li>
+<li>你丧失了所有希望了吗？</li>
+<li>没有母亲能像神那样为子民付出，没有一个母亲能在冰箱里准备所有水果。</li>
+<li>你要拒斥这一切？你要放弃这一切？你要放弃品尝樱桃的滋味？？</li>
+<li>世界肯定不是按照所有人的期望运转的，也不是什么都可以大家一起投票决定的，好比如不同的体制，想象一下如果所有人举手投票地球怎么转，那地球不得每分每秒都瞎飞，他只能有一种公转自转方式，那就是按照物理规律真理转。</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>日本电影旬报年度十佳1990 2022</title>
+      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1%E6%97%AC%E6%8A%A5%E5%B9%B4%E5%BA%A6%E5%8D%81%E4%BD%B31990-2022/</link>
+      <pubDate>Sun, 21 Jan 2024 13:57:23 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1%E6%97%AC%E6%8A%A5%E5%B9%B4%E5%BA%A6%E5%8D%81%E4%BD%B31990-2022/</guid>
+      <description>来自电影旬报 2022 《惠子，凝视》三宅唱 《某个男人》石川庆 《在公交车站直到黎明》高桥伴明 《这里是亚美子》森井勇佑 《冬蔷薇》阪本顺治 《吃土的十二个月</description>
+      <content:encoded><![CDATA[<h2 id="来自电影旬报">来自电影旬报</h2>
+<h3 id="2022">2022</h3>
+<ol>
+<li>《惠子，凝视》三宅唱</li>
+<li>《某个男人》石川庆</li>
+<li>《在公交车站直到黎明》高桥伴明</li>
+<li>《这里是亚美子》森井勇佑</li>
+<li>《冬蔷薇》阪本顺治</li>
+<li>《吃土的十二个月》中江裕司</li>
+<li>《霸权动画！》吉野耕平</li>
+<li>《岁月自珍》早川千绘</li>
+<li>《失踪》片山慎三</li>
+<li>《千夜、一夜》久保田直</li>
+</ol>
+<h3 id="2021">2021</h3>
+<ol>
+<li>《驾驶我的车》滨口龙介</li>
+<li>《茜色如烧》石井裕也</li>
+<li>《偶然与想象》滨口龙介</li>
+<li>《美好的世界》西川美和</li>
+<li>《水俣曼荼罗》原一男</li>
+<li>《东京贵族女子》岨手由贵子</li>
+<li>《空白》吉田惠辅</li>
+<li>《由宇子的天平》春本雄二郎</li>
+<li>《琴茧》横滨聪子</li>
+<li>《花束般的恋爱》土井裕泰</li>
+</ol>
+<h3 id="2020">2020</h3>
+<ol>
+<li>《间谍之妻》黑泽清</li>
+<li>《海边电影院》大林宣彦</li>
+<li>《晨曦将至》河濑直美</li>
+<li>《败犬》武正晴</li>
+<li>《真心的符号》深田晃司</li>
+<li>《37秒》宮崎光代</li>
+<li>《罪之声》土井裕泰</li>
+<li>《喜剧 爱妻物语》足立绅</li>
+<li>《住在空中》青山真治</li>
+<li>《阿尔卑斯看台的外缘》城定秀夫</li>
+</ol>
+<h3 id="2019">2019</h3>
+<ol>
+<li>《火口的两人》荒井晴彦</li>
+<li>《半世界》阪本顺治</li>
+<li>《从宫本到你》真利子哲也</li>
+<li>《侧颜》深田晃司</li>
+<li>《蜜蜂与远雷》石川庆</li>
+<li>《再见，嘴唇》盐田明彦</li>
+<li>《一夜》白石和弥</li>
+<li>《爱情是什么》今泉力哉</li>
+<li>《岚电》铃木卓尔</li>
+<li>《旅途的结束，世界的开始》黑泽清</li>
+</ol>
+<h3 id="2018">2018</h3>
+<ol>
+<li>《小偷家族》是枝裕和</li>
+<li>《菊与断头台》濑濑敬久</li>
+<li>《你的鸟儿会唱歌》三宅唱</li>
+<li>《夜以继日》滨口龙介</li>
+<li>《孤狼之血》白石和弥</li>
+<li>《铃木家的谎言》野尻克己</li>
+<li>《斩、》冢本晋也</li>
+<li>《友罪》濑濑敬久</li>
+<li>《日日是好日》大森立嗣</li>
+<li>《教诲师》佐向大</li>
+</ol>
+<h3 id="2017">2017</h3>
+<ol>
+<li>《夜空总有最大密度的蓝色》石井裕也</li>
+<li>《花筐》大林宣彦</li>
+<li>《啊，荒野》岸善幸</li>
+<li>《生在幼子》三岛有纪子</li>
+<li>《散步的侵略者》黑泽清</li>
+<li>《曼谷之夜》富田克也</li>
+<li>《她的人生没有错》广木隆一</li>
+<li>《第三度嫌疑人》是枝裕和</li>
+<li>《她不知道名字的那些鸟儿》白石和弥</li>
+<li>《人生密密缝》荻上直子</li>
+</ol>
+<h3 id="2016">2016</h3>
+<ol>
+<li>《在这世界的角落》片渊须直</li>
+<li>《新哥斯拉》庵野秀明 / 樋口真嗣</li>
+<li>《临渊而立》深田晃司</li>
+<li>《错乱的一代》真利子哲也</li>
+<li>《永远的托词》西川美和</li>
+<li>《瑞普·凡·温克尔的新娘》岩井俊二</li>
+<li>《滚烫的爱》中野量太</li>
+<li>《毛骨悚然》黑泽清</li>
+<li>《跨越栅栏》山下敦弘</li>
+<li>《怒》李相日</li>
+</ol>
+<h3 id="2015">2015</h3>
+<ol>
+<li>《恋人们》 桥口亮辅</li>
+<li>《野火》冢本晋也</li>
+<li>《欢乐时光》滨口龙介</li>
+<li>《海街日记》 是枝裕和</li>
+<li>《岸边之旅》 黑泽清</li>
+<li>《血光光五人帮》 石井隆</li>
+<li>《日本天空下》 荒井晴彦</li>
+<li>《所罗门的伪证》（前后篇） 成岛出</li>
+<li>《如果和母亲一起生活》 山田洋次</li>
+<li>《摇摆》冨永昌敬 /《你是好孩子》吴美保</li>
+</ol>
+<h3 id="2014">2014</h3>
+<ol>
+<li>《只在那里发光》吴美保</li>
+<li>《0.5毫米》安藤桃子</li>
+<li>《纸之月》吉田大八</li>
+<li>《原野四十九日》大林宣彦</li>
+<li>《我们的家族》石井裕也</li>
+<li>《小小的家》山田洋次</li>
+<li>《我的男人》熊切和嘉</li>
+<li>《百元之恋》武正晴</li>
+<li>《听水的声音》山本政志</li>
+<li>《西野幸彦的恋爱与冒险》井口奈己 / 《蜩之记》小泉尧史</li>
+</ol>
+<h3 id="2013">2013</h3>
+<ol>
+<li>《去见小洋葱的母亲》森崎东</li>
+<li>《编舟记》石井裕也</li>
+<li>《凶恶》白石和弥</li>
+<li>《辉夜姬物语》高畑勋</li>
+<li>《相残》青山真治</li>
+<li>《如父如子》是枝裕和</li>
+<li>《起风了》宫崎骏</li>
+<li>《再见溪谷》大森立嗣</li>
+<li>《不求上进的玉子》山下敦弘</li>
+<li>《闪回记忆 3D 》 松江哲明 / 《人形少女》石井隆</li>
+</ol>
+<h3 id="2012">2012</h3>
+<ol>
+<li>《家族的国度》梁英姬</li>
+<li>《听说桐岛要退部》吉田大八</li>
+<li>《极恶非道2》北野武</li>
+<li>《临终的信托》周防正行</li>
+<li>《苦役列车》山下敦弘</li>
+<li>《我的母亲》原田真人</li>
+<li>《无用的我看见了天》棚田由纪</li>
+<li>《盗钥匙的方法》内田贤治</li>
+<li>《希望之国》园子温</li>
+<li>《卖梦的两人》西川美和</li>
+</ol>
+<h3 id="2011">2011</h3>
+<ol>
+<li>《一枚明信片》新藤兼人</li>
+<li>《大鹿村骚动记》阪本顺治</li>
+<li>《冰冷热带鱼》园子温</li>
+<li>《真幌站前多田便利屋 》大森立嗣</li>
+<li>《第八日的蝉》成岛出</li>
+<li>《失乐园挽歌》富田克也</li>
+<li>《桃花期》大根仁 /《东京公园》青山真治</li>
+<li>《昔日的我》山下敦弘</li>
+<li>《泡吧侦探》桥本一</li>
+</ol>
+<h3 id="2010">2010</h3>
+<ol>
+<li>《恶人》李相日</li>
+<li>《告白》中岛哲也</li>
+<li>《天堂故事》濑濑敬久</li>
+<li>《十三刺客》三池崇史</li>
+<li>《从河底问好》石井裕也</li>
+<li>《芋虫》若松孝二</li>
+<li>《必死剑鸟刺》平山秀幸</li>
+<li>《英雄秀》井筒和幸</li>
+<li>《海炭市叙景》熊切和嘉</li>
+<li>《裸体之夜：掠夺狂爱》石井隆</li>
+</ol>
+<h3 id="2009">2009</h3>
+<ol>
+<li>《亲爱的医生》西川美和</li>
+<li>《维荣的妻子》根岸吉太郎</li>
+<li>《剑岳：点之记》木村大作</li>
+<li>《爱的曝光》园子温</li>
+<li>《不沉的太阳》若松节朗</li>
+<li>《空气人偶》是枝裕和</li>
+<li>《奇迹爱情物语》横浜聪子</li>
+<li>《夏日大作战》细田守</li>
+<li>《无人守护》君塚良一</li>
+<li>《强风正劲》大森寿美男</li>
+</ol>
+<h3 id="2008">2008</h3>
+<ol>
+<li>《入殓师》泷田洋二郎</li>
+<li>《周围的事》桥口亮辅</li>
+<li>《联合赤军实录：通向浅间山庄之路》若松孝二</li>
+<li>《东京奏鸣曲》 黑泽清</li>
+<li>《步伐不停》 是枝裕和</li>
+<li>《黑暗中的孩子们》阪本顺治</li>
+<li>《母亲》 山田洋次</li>
+<li>《超越巅峰》原田真人</li>
+<li>《接吻》万田邦敏</li>
+<li>《放课后》内田贤治</li>
+</ol>
+<h3 id="2007">2007</h3>
+<ol>
+<li>《即便这样也不是我做的》周防正行</li>
+<li>《天然子结构》山下敦弘</li>
+<li>《喋喋不休》平山秀幸</li>
+<li>《悲伤假期》青山真治</li>
+<li>《河童之夏》原惠一</li>
+<li>《挎斗摩托车里的狗》根岸吉太郎</li>
+<li>《松根乱射事件》山下敦弘</li>
+<li>《魂萌》阪本顺治</li>
+<li>《夕岚之街樱之国》佐佐部清</li>
+<li>《悲伤爱情》吉田大八</li>
+</ol>
+<h3 id="2006">2006</h3>
+<ol>
+<li>《扶桑花女孩》李相日</li>
+<li>《摇摆》西川美和</li>
+<li>《向雪祈愿》根岸吉太郎</li>
+<li>《纸屋悦子的青春》黑木和雄</li>
+<li>《武士的一分》山田洋次</li>
+<li>《被嫌弃的松子的一生》中岛哲也</li>
+<li>《博士的爱情方程式》小泉尧史</li>
+<li>《明日的记忆》堤幸彦</li>
+<li>《海鸥食堂》荻上直子</li>
+<li>《谁是加缪》柳町光男</li>
+</ol>
+<h3 id="2005">2005</h3>
+<ol>
+<li>《无敌青春》井筒和幸</li>
+<li>《永远的三丁目的夕阳》山崎贵</li>
+<li>《何时是读书天》绪方明</li>
+<li>《彩虹老人院》犬童一心</li>
+<li>《遇人不熟》內田贤治</li>
+<li>《琳达！琳达！琳达！》山下敦弘</li>
+<li>《金丝雀》盐田明彦</li>
+<li>《男人们的大和号》佐藤纯弥</li>
+<li>《空中庭园》丰田利晃</li>
+<li>《神的私语》大森立嗣 / 《被埋葬的树木》小栗康平</li>
+</ol>
+<h3 id="2004">2004</h3>
+<ol>
+<li>《无人知晓》是枝裕和</li>
+<li>《血与骨》崔洋一</li>
+<li>《下妻物语》中岛哲也</li>
+<li>《如果和父亲生活》黑木和雄</li>
+<li>《隐剑鬼爪》山田洋次</li>
+<li>《理由》大林宣彦 |</li>
+<li>《摇摆少女》矢口史靖</li>
+<li>《光脚小鸡》森崎东</li>
+<li>《七夕之夏》佐佐部清</li>
+<li>《透光的树》根岸吉太郎</li>
+</ol>
+<h3 id="2003">2003</h3>
+<ol>
+<li>《雾岛美丽的夏天》黑木和雄</li>
+<li>《赤目四十八泷心中未遂》荒户源次郎</li>
+<li>《振荡器》广木隆一</li>
+<li>《Jose、老虎和鱼》犬童一心</li>
+<li>《宛如阿修罗》森田芳光</li>
+<li>《镜之女》吉田喜重</li>
+<li>《座头市》北野武</li>
+<li>《蕨野行》恩地日出夫</li>
+<li>《自视性幻觉》黑泽清</li>
+<li>《我的家》阪本顺治</li>
+</ol>
+<h3 id="2002">2002</h3>
+<ol>
+<li>《黄昏清兵卫》山田洋次</li>
+<li>《刑务所之中》崔洋一</li>
+<li>《绑架金大中》阪本顺治</li>
+<li>《熟女杀人事件》平山秀幸</li>
+<li>《合气道》天愿大介</li>
+<li>《笑蛙》平山秀幸</li>
+<li>《阿弥陀堂讯息》小泉尧史</li>
+<li>《对不起》富樫森</li>
+<li>《乒乓》曾利文彦</li>
+<li>《女棋士之恋》大谷健太郎</li>
+</ol>
+<h3 id="2001">2001</h3>
+<ol>
+<li>《GO！大暴走》行定勋</li>
+<li>《三心两性》桥口亮辅</li>
+<li>《千与千寻》宫崎骏</li>
+<li>《风花》相米慎二</li>
+<li>《人造天堂》青山真治</li>
+<li>《恶童日记 》古厩智二</li>
+<li>《关于莉莉周的一切》岩井俊二</li>
+<li>《五个扑水的少年》矢口史靖</li>
+<li>《光之雨》高桥伴明</li>
+<li>《赤桥下的暖流》今村昌平</li>
+</ol>
+<h3 id="2000">2000</h3>
+<ol>
+<li>《颜》阪本顺治</li>
+<li>《三弦之恋》中江裕司</li>
+<li>《御法度》大岛渚 |</li>
+<li>《十五岁：学校4》山田洋次</li>
+<li>《大逃杀》深作欣二</li>
+<li>《三文役者》新藤兼人</li>
+<li>《扒手》黑木和雄</li>
+<li>《独立少年合唱团》绪方明</li>
+<li>《黑之雨》小泉尧史</li>
+<li>《初恋》筱原哲雄</li>
+</ol>
+<h3 id="1999">1999</h3>
+<ol>
+<li>《春季来的人》相米慎二</li>
+<li>《金融腐蚀列岛》原田真人</li>
+<li>《刑法第三十九条》森田芳光</li>
+<li>《铁道员》降旗康男</li>
+<li>《家庭私小说》诹访敦彦</li>
+<li>《一展歌喉》井筒和幸</li>
+<li>《菊次郎的夏天》北野武</li>
+<li>《大阪物语》市川准</li>
+<li>《去往任何地方》盐田明彦</li>
+<li>《贝壳》中原俊</li>
+</ol>
+<h3 id="1998">1998</h3>
+<ol>
+<li>《花火》北野武</li>
+<li>《乞爱者》平山秀幸</li>
+<li>《激浪青春》矶村一路</li>
+<li>《肝脏大夫》今村昌平</li>
+<li>《X圣治》黑泽清</li>
+<li>《学校3》山田洋次</li>
+<li>《犬奔》崔洋一</li>
+<li>《伤痕累累的天使》阪本顺治</li>
+<li>《时雨之记》泽井信一郎</li>
+<li>《中国鸟人》三池崇史 / 《绊》根岸吉太郎</li>
+</ol>
+<h3 id="1997">1997</h3>
+<ol>
+<li>《鳗鱼》今村昌平</li>
+<li>《幽灵公主》宫崎骏</li>
+<li>《广播时间》三谷幸喜</li>
+<li>《东京夜曲》市川准</li>
+<li>《鬼火》望月六郎</li>
+<li>《涩谷24小时》原田真人</li>
+<li>《诱拐》大河原孝夫</li>
+<li>《身心投入》荒井晴彦</li>
+<li>《东京日和》竹中直人</li>
+<li>《濑户内月光小夜曲》筱田正浩 /《萌之朱雀》河濑直美</li>
+</ol>
+<h3 id="1996">1996</h3>
+<ol>
+<li>《谈谈情，跳跳舞》周防正行</li>
+<li>《坏孩子的天空》北野武</li>
+<li>《眠之男》小栗康平</li>
+<li>《春天情书》森田芳光</li>
+<li>《梦之村》东阳一</li>
+<li>《岸和田少年愚连队》井筒和幸</li>
+<li>《常磐庄的青春》市川准</li>
+<li>《学校2》山田洋次</li>
+<li>《比里坚阿福神》阪本顺治</li>
+<li>《无恶不作》细野辰兴</li>
+</ol>
+<h3 id="1995">1995</h3>
+<ol>
+<li>《午后的遗言》新藤兼人</li>
+<li>《东京兄妹》市川准</li>
+<li>《情书》岩井俊二</li>
+<li>《幻之光》是枝裕和</li>
+<li>《写乐之感官世界》筱田正浩</li>
+<li>《加美拉：大怪兽空中大决战》金子修介</li>
+<li>《深河》熊井启</li>
+<li>《神风七十二小时》原田真人</li>
+<li>《马克斯之山》崔洋一</li>
+<li>《东京铁拳》塚本晋也 /《流砂幻爱》桥口亮辅</li>
+</ol>
+<h3 id="1994">1994</h3>
+<ol>
+<li>《全身小说家》原一男</li>
+<li>《忠臣蔵外传之四谷怪谈》深作欣二</li>
+<li>《居酒屋的幽灵》渡边孝好</li>
+<li>《棒之哀 》神代辰巳</li>
+<li>《夏天的庭院》相米慎二</li>
+<li>《等救火的日子》竹中直人</li>
+<li>《800米，两个中跑运动员》广木隆一</li>
+<li>《百变狸猫》高畑勋</li>
+<li>《爱的新世界》高桥伴明</li>
+<li>《每天都是暑假》金子修介</li>
+</ol>
+<h3 id="1993">1993</h3>
+<ol>
+<li>《月亮在哪边》崔洋一</li>
+<li>《搬家》相米慎二</li>
+<li>《在医院死去》市川准</li>
+<li>《奏鸣曲》北野武</li>
+<li>《我们都还活着》泷田洋二郎</li>
+<li>《学校》山田洋次</li>
+<li>《爱在东京》柳町光男</li>
+<li>《爱之歌——泷廉太郎物语》泽井信一郎</li>
+<li>《裸体之夜》石井隆</li>
+<li>《袅袅夕阳情》黑泽明</li>
+</ol>
+<h3 id="1992">1992</h3>
+<ol>
+<li>《五个相扑的少年》周防正行</li>
+<li>《青春摇滚》大林宣彦</li>
+<li>《生活在阿贺》佐藤真</li>
+<li>《红猪》宫崎骏</li>
+<li>《死而无憾》石井隆</li>
+<li>《没有桥的河流》东阳一</li>
+<li>《起尾注》深作欣二</li>
+<li>《情欲关系》若松孝二</li>
+<li>《墨东绮谭》新藤兼人</li>
+<li>《星闪闪》松冈锭司</li>
+</ol>
+<h3 id="1991">1991</h3>
+<ol>
+<li>《儿子》山田洋次</li>
+<li>《大诱拐》冈本喜八</li>
+<li>《八月狂想曲》黑泽明</li>
+<li>《无能的人》竹中直人</li>
+<li>《两个人》大林宣彦</li>
+<li>《那年夏天，宁静的海》北野武</li>
+<li>《12个善良的日本人》中原俊</li>
+<li>《将军》阪本顺治</li>
+<li>《岁月的童话》高畑勋</li>
+<li>《四万十川》恩地日出夫</li>
+</ol>
+<h3 id="1990">1990</h3>
+<ol>
+<li>《樱之园》中原俊</li>
+<li>《少年时代》筱田正浩</li>
+<li>《死之棘》小栗康平</li>
+<li>《梦》黑泽明</li>
+<li>《笨金鱼》松冈锭司</li>
+<li>《等待出击》若松孝二</li>
+<li>《3-4X10月》北野武</li>
+<li>《浪人街》黑木和雄</li>
+<li>《鸫》市川准</li>
+<li>《洁白的手》神山征二郎</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>3种方式添加hugo主题</title>
+      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/3%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0hugo%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Sun, 21 Jan 2024 13:47:14 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/3%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0hugo%E4%B8%BB%E9%A2%98/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h2 id="install-newsroom-theme">Install Newsroom Theme</h2>
+<p><strong>Note:</strong> Newsroom uses is styled in sass. Thefore, <strong>hugo-extended version</strong> must be installed on your system.</p>
+<h3 id="option-1-add-newsroom-as-a-git-submodule">Option 1: Add Newsroom as a git submodule</h3>
+<p>Add this theme as a Git submodule inside your Hugo site folder:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git submodule add https://github.com/onweru/newsroom.git themes/newsroom
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="option-2-add-newsroom-as-a-hugo-modulerecommended">Option 2: Add Newsroom as a hugo module <strong>(Recommended)</strong></h3>
+<p>In your config.toml file, set <code>theme</code> field value as follows</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">theme = [&#34;github.com/onweru/newsroom&#34;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then run</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo mod init yourWebsiteName &amp;&amp; hugo mod get -u .
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="option-3-install-newsroom-into-your-theme-directoryleast-diserable">Option 3: Install Newsroom into your theme directory <strong>(Least diserable)</strong></h3>
+<p>From the root of your Hugo website run:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/onweru/newsroom themes/newsroom
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>In your config.toml file, set <code>theme</code> field value as follows</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">theme = &#34;newsroom&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>《随风而逝》  阿巴斯</title>
+      <link>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D--%E9%98%BF%E5%B7%B4%E6%96%AF/</link>
+      <pubDate>Sun, 21 Jan 2024 07:56:36 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/%E9%9A%8F%E7%AC%94/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D--%E9%98%BF%E5%B7%B4%E6%96%AF/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>这样开车一天重复几趟上上下下，早就该知道那里信号不好，不如直接就在山顶上搭个帐篷呢哈哈，而且貌似每天最重要的就是接电话，跟小孩子聊天打探消息和花半天时间去买牛奶真的大可不必哈哈，真不如搭个帐篷，然后花点小钱，请那个孩子每天送点东西顺便打探下那个女的病情。</p>
+<p>看到他每天瞎忙，到处自然熟，坐下不到三分钟，茶水没喝就动起来了，觉得他好焦虑啊。这样在这里住几天，真不如直接花点钱给村里那个孩子，教他怎么拍照片，然后回去，等老人去世了，叫他给他打个电话，然后叫他去拍一手资料，反正也没别人在这里，还怕自己的新闻被人抢掉吗？</p>
+<p>哈哈。不过看上面一个影评，倒是写的很美，也让我感觉到了电影里的没注意到的美，不过这种叙事非常弱要靠自己大量脑部的电影，个人觉得有点像 走近科学社会记录片，也差不多这种镜头，只不过更加美一点。现在设备好了随便找个景，航拍下，也能有这种，就差一点没有诗</p>
+<hr>
+<ul>
+<li>最近一口气看了好几部 阿巴斯的电影，包括村庄三部曲《何处是我朋友的家》，《生生长流》，《橄榄树下的情人》 导演的作品不是用艺术天分狂想乡村，而是很平和的接近白描的展现乡土的生活切面，不做精加工的强调乡愁，童年之类的话题，而是制造一种很深度的临场感，看他的电影，彷佛就在那里生活了一段日子一般，让我想起了旅游也分攻略打卡网红地点和深度长时间游逛。者带来的后劲肯定是不一样的，前者只是像一道热菜，发完朋友圈，旅行结束就差不多没有热度了，后面的是已经形成了深层次的记忆。你很可能把重游都列上了下次旅行的日程，伊朗的农村好多山啊，麦浪，弯折的窄窄的泥巴路，小片的无人打理自然生成的小树林，民屋墙角随处可见的野花。空气一定很新鲜吧。我倒是不喜欢去揣摩里面多少的宗教意义，我只是觉得很美。</li>
+</ul>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
