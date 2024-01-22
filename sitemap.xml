@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.huzhiwen.top/posts/essay/</loc>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
+  </url><url>
     <loc>https://blog.huzhiwen.top/posts/</loc>
-    <lastmod>2024-01-21T19:14:26+08:00</lastmod>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/categories/</loc>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/tags/docker/</loc>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/posts/essay/docker%E5%AE%89%E8%A3%85wordpress/</loc>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/categories/essay/</loc>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/</loc>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/tags/</loc>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/tags/wordpress/</loc>
+    <lastmod>2024-01-22T23:02:58+08:00</lastmod>
   </url><url>
     <loc>https://blog.huzhiwen.top/posts/photo/</loc>
     <lastmod>2024-01-21T19:14:26+08:00</lastmod>
   </url><url>
-    <loc>https://blog.huzhiwen.top/categories/</loc>
-    <lastmod>2024-01-21T19:14:26+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.huzhiwen.top/</loc>
-    <lastmod>2024-01-21T19:14:26+08:00</lastmod>
-  </url><url>
     <loc>https://blog.huzhiwen.top/categories/photo/</loc>
-    <lastmod>2024-01-21T19:14:26+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.huzhiwen.top/tags/</loc>
     <lastmod>2024-01-21T19:14:26+08:00</lastmod>
   </url><url>
     <loc>https://blog.huzhiwen.top/tags/%E6%88%AA%E5%9B%BE/</loc>
@@ -31,12 +46,6 @@
   </url><url>
     <loc>https://blog.huzhiwen.top/posts/photo/%E7%AB%A5%E5%B9%B4%E7%BE%8E%E9%A3%9F/</loc>
     <lastmod>2024-01-21T15:26:50+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.huzhiwen.top/posts/essay/</loc>
-    <lastmod>2024-01-21T14:11:34+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.huzhiwen.top/categories/essay/</loc>
-    <lastmod>2024-01-21T14:11:34+08:00</lastmod>
   </url><url>
     <loc>https://blog.huzhiwen.top/tags/hugo/</loc>
     <lastmod>2024-01-21T14:11:34+08:00</lastmod>

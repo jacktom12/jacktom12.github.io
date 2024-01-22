@@ -6,8 +6,99 @@
     <description>Recent content in 📕随笔 on Huzw&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 21 Jan 2024 14:11:34 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jan 2024 23:02:58 +0800</lastBuildDate>
     <atom:link href="https://blog.huzhiwen.top/posts/essay/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker安装wordPress</title>
+      <link>https://blog.huzhiwen.top/posts/essay/docker%E5%AE%89%E8%A3%85wordpress/</link>
+      <pubDate>Mon, 22 Jan 2024 23:02:58 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/essay/docker%E5%AE%89%E8%A3%85wordpress/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>今天看到一个记录豆瓣观影数据的网页很好看，发现是wordPress的插件，下来看看。</p>
+<h2 id="软件安装">软件安装</h2>
+<h3 id="wordpress安装">wordPress安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">container</span> <span class="n">run</span> \
+</span></span><span class="line"><span class="cl">  <span class="o">-</span><span class="n">d</span> \
+</span></span><span class="line"><span class="cl">  <span class="o">-</span><span class="n">p</span> <span class="mi">8080</span><span class="p">:</span><span class="mi">80</span> \
+</span></span><span class="line"><span class="cl">  <span class="o">--</span><span class="n">rm</span> \
+</span></span><span class="line"><span class="cl">  <span class="o">--</span><span class="n">name</span> <span class="n">wordpress</span> \
+</span></span><span class="line"><span class="cl">  <span class="o">--</span><span class="n">env</span> <span class="n">WORDPRESS_DB_PASSWORD</span><span class="o">=</span><span class="mi">123456</span> \
+</span></span><span class="line"><span class="cl">  <span class="o">--</span><span class="n">link</span> <span class="n">wordpressdb</span><span class="p">:</span><span class="n">mysql</span> \
+</span></span><span class="line"><span class="cl">  <span class="o">--</span><span class="n">volume</span> <span class="s2">&#34;$PWD/wordpress&#34;</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">html</span> \
+</span></span><span class="line"><span class="cl">  <span class="n">wordpress</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="mysql安装">mysql安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker container run \
+</span></span><span class="line"><span class="cl">  -d \
+</span></span><span class="line"><span class="cl">  --rm \
+</span></span><span class="line"><span class="cl">  --name wordpressdb \
+</span></span><span class="line"><span class="cl">  --env MYSQL_ROOT_PASSWORD=123456 \
+</span></span><span class="line"><span class="cl">  --env MYSQL_DATABASE=wordpress \
+</span></span><span class="line"><span class="cl">  mysql:5.7
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>格式化输出容器以及端口，确认映射端口没错</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker container ls --format &#34;table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Ports}}&#34; 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="配置wordpress">配置wordPress</h2>
+<ul>
+<li>插件作者有个搭配的主题，所以直接下那个主题
+<code>https://github.com/bigfa/Farallon</code>
+在控制台添加一个页面里面添加插件提供的段代码</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[wpd types=movie,book style=card]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240122232232.png" alt=""  />
+</p>
+<p>把刚添加的页面放到主页上，并且可以在主题设置中把首页其他的元素都删除掉，只要这一个页面。</p>
+<h2 id="nginx反代理">nginx反代理</h2>
+<ul>
+<li>nginx安装在docker外，而且还有其他的应用，所以还是采用新建一个配置文件，进行反代理设置。</li>
+<li>同时在wordPress中设置好网站的https地址，否则会导致一直自动跳转加端口号，导致Https失败。</li>
+<li><img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240122232735.png" alt=""  />
+</li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>快速写博客流程</title>
       <link>https://blog.huzhiwen.top/posts/essay/%E5%BF%AB%E9%80%9F%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</link>
@@ -377,6 +468,7 @@
 </div>
 
 </li>
+<li>静靠弯弯小草近溪泉</li>
 </ul>
 ]]></content:encoded>
     </item>
