@@ -67,10 +67,34 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker container ls --format &#34;table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Ports}}&#34; 
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">container</span> <span class="n">ls</span> <span class="o">--</span><span class="n">format</span> <span class="s2">&#34;table {{.ID}}</span><span class="se">\t</span><span class="s2">{{.Names}}</span><span class="se">\t</span><span class="s2">{{.Image}}</span><span class="se">\t</span><span class="s2">{{.Ports}}&#34;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">ps</span> <span class="o">--</span><span class="n">format</span> <span class="s2">&#34;table {{.ID}}</span><span class="se">\t</span><span class="s2">{{.Names}}</span><span class="se">\t</span><span class="s2">{{.Image}}</span><span class="se">\t</span><span class="s2">{{.Status}}&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 对已经部署好的容器可以进行快照备份以后换虚拟机可以无痛迁移</span>
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">ps</span> <span class="o">--</span><span class="n">format</span> <span class="s2">&#34;table {{.ID}}</span><span class="se">\t</span><span class="s2">{{.Names}}</span><span class="se">\t</span><span class="s2">{{.Image}}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">commit</span> <span class="o">-</span><span class="n">p</span> <span class="mi">46218031</span><span class="n">da14</span> <span class="n">wordpress</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="mi">20240123</span>
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">images</span> <span class="o">--</span><span class="n">format</span> <span class="s2">&#34;table {{.Repository}}</span><span class="se">\t</span><span class="s2">{{.ID}}</span><span class="se">\t</span><span class="s2">{{.Tag}}</span><span class="se">\t</span><span class="s2">{{.Size}} &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">save</span> <span class="o">-</span><span class="n">o</span> <span class="o">~/</span><span class="n">wordpress</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="mf">20240123.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="n">wordpress</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="mi">20240123</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="nb">load</span> <span class="o">-</span><span class="n">i</span> <span class="o">~/</span><span class="n">wordpress</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="mf">20240123.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">images</span>
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">d</span> <span class="o">-</span><span class="n">p</span> <span class="mi">80</span><span class="p">:</span><span class="mi">80</span> <span class="n">wordpress</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="mi">20240123</span><span class="err">`</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="配置wordpress">配置wordPress</h2>
