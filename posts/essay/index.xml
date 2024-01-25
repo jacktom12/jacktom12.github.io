@@ -6,7 +6,7 @@
     <description>Recent content in 📕随笔 on Huzw&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 22 Jan 2024 23:02:58 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jan 2024 17:04:50 +0800</lastBuildDate>
     <atom:link href="https://blog.huzhiwen.top/posts/essay/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>😊😁😂😘🤣😁😎😋😊😉😍🥰🤩</title>
@@ -1298,6 +1298,247 @@
 </p>
 </div>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>瀑布流随笔</title>
+      <link>https://blog.huzhiwen.top/posts/essay/%E7%80%91%E5%B8%83%E6%B5%81%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Thu, 25 Jan 2024 17:04:50 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/essay/%E7%80%91%E5%B8%83%E6%B5%81%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>hugo shortCut 瀑布流</p>
+<ul>
+<li><code>layouts\shortcodes</code> 中新建eassy.html</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&#34;https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js&#34;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">在页面加载完成后运行</span> <span class="n">Masonry</span>
+</span></span><span class="line"><span class="cl">  <span class="n">document</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">var</span> <span class="n">masonry</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Masonry</span><span class="p">(</span><span class="s1">&#39;#masonry-container&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">itemSelector</span><span class="p">:</span> <span class="s1">&#39;.message-box&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">columnWidth</span><span class="p">:</span> <span class="s1">&#39;.message-box&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">gutter</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>assets\css\extended\blank.css</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.messages-container {
+</span></span><span class="line"><span class="cl">	display: grid;
+</span></span><span class="line"><span class="cl">	grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+</span></span><span class="line"><span class="cl">	gap: 20px;
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">.message-box {
+</span></span><span class="line"><span class="cl">  display: inline-block;
+</span></span><span class="line"><span class="cl">  max-width: 100%;
+</span></span><span class="line"><span class="cl">  width: 30%;
+</span></span><span class="line"><span class="cl">  padding: 17px;
+</span></span><span class="line"><span class="cl">  border-radius:50px;
+</span></span><span class="line"><span class="cl">  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+</span></span><span class="line"><span class="cl">  background-color: #fff;
+</span></span><span class="line"><span class="cl">  transition: box-shadow 0.3s;
+</span></span><span class="line"><span class="cl">  margin-bottom: 20px;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">.dark .message-box {
+</span></span><span class="line"><span class="cl">  background-color: #2e2e33;
+</span></span><span class="line"><span class="cl">  color: #fff;
+</span></span><span class="line"><span class="cl">  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>移动设备适配
+<ul>
+<li>在head里加入</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&#34;&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>css中<code>@media screen and (max-width: 600px) {</code>
+不在最下方不会生效。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> .message-box {
+</span></span><span class="line"><span class="cl">		display: inline-block;
+</span></span><span class="line"><span class="cl">		width: 100%;/* 一直没生效，因为@media screen没有放在最下面，有先后顺序的  */
+</span></span><span class="line"><span class="cl">		padding: 10px;
+</span></span><span class="line"><span class="cl">		border-radius:40px;
+</span></span><span class="line"><span class="cl">		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+</span></span><span class="line"><span class="cl">		background-color: #fff;
+</span></span><span class="line"><span class="cl">		transition: box-shadow 0.3s;
+</span></span><span class="line"><span class="cl">		margin-bottom: 20px;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> .messages-container {
+</span></span><span class="line"><span class="cl">		grid-template-columns:  1fr ; 
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>hugo.yaml 中开启渲染html</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">markup:
+</span></span><span class="line"><span class="cl">  goldmark:
+</span></span><span class="line"><span class="cl">    renderer:
+</span></span><span class="line"><span class="cl">      unsafe: true
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>md文件里引用shortCut</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;div id=&#34;masonry-container&#34; class=&#34;messages-container&#34;&gt;
+</span></span><span class="line"><span class="cl">
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">***</p>
+    
+      <div class="thumbnail-link" style="cursor: pointer;" onclick="showImage('***')">
+        <img src="***" class="thumbnail">
+      </div>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
     </item>
     <item>
       <title>docker安装wordPress</title>
