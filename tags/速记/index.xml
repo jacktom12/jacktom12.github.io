@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>速记 on Huzw&#39;s Blog</title>
+    <link>https://blog.huzhiwen.top/tags/%E9%80%9F%E8%AE%B0/</link>
+    <description>Recent content in 速记 on Huzw&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 21 Jan 2024 14:01:20 +0800</lastBuildDate>
+    <atom:link href="https://blog.huzhiwen.top/tags/%E9%80%9F%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>😊😁😂😘🤣😁😎😋😊😉😍🥰🤩</title>
+      <link>https://blog.huzhiwen.top/posts/essay/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+      <pubDate>Sun, 21 Jan 2024 14:01:20 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/essay/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<hr>
+<div id="masonry-container" class="messages-container">
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">《本能》 导演居然也是《星河战舰》和《黑皮书》的导演哈哈，还有斯瓦辛格的《全面回忆》</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">天才总是成群的来，跟高手下棋水平才能高</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">《Malcom in the Middle》中Malcom的扮演者Frankie Muniz近年来经历了太多不幸。由于车祸和两次突发短暂性大脑供血障碍，他已经丧失了几乎所有自己出演《Malcom》一剧的记忆。最近在参加自己叔叔的葬礼期间，他养的猫又意外打开了家里的水龙头，导致全家被淹、房屋报废（真事）。不过他在本周终于迎来了与女友订婚的好消息。---最爱的《马尔科姆的一家》</p>
+    
+      <div class="thumbnail-link" style="cursor: pointer;" onclick="showImage('https:\/\/cdn.jsdelivr.net\/gh\/jacktom12\/blogPic@main\/20240124142905.png')">
+        <img src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240124142905.png" class="thumbnail">
+      </div>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">今天发现《汪洋中的一条船》的女主于佳卉居然自杀了哎</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+<p>
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">罪恶之城的美漫蛮不错的</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">爱情没有那么多借口，如果不能圆满，只能说明爱的不够。</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+</p>
+<p>
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">河濑阿姨感言过：电影是风，是阳光，是走在我们前面的人们。</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">《观无量寿经》云：“人以恶应堕恶道，命欲终时，地狱众火俱至，必有火车来迎。”</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">《尽情游戏》哪天重温下</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">静靠弯弯小草近溪泉</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">一旦体重上去了，真的很难减了，你少吃点会饿，而且你已经养成了不愿意动的坏习惯。人生真实折腾，以前觉得瘦不好拼命想胖点，现在又忙着减下去哎，人生真的是一座苦狱。</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+</p>
+<p>
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">世界肯定不是按照所有人的期望运转的，也不是什么都可以大家一起投票决定的，好比如不同的体制，想象一下如果所有人举手投票地球怎么转，那地球不得每分每秒都瞎飞，他只能有一种公转自转方式，那就是按照物理规律真理转。</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">你要拒斥这一切？你要放弃这一切？你要放弃品尝樱桃的滋味？？</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">没有母亲能像神那样为子民付出，没有一个母亲能在冰箱里准备所有水果。</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">你丧失了所有希望了吗？</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">一个人去看病，说我全身都痛，摸头头痛，摸肚子肚子痛，最后发现你的身体没毛病，是你的手指破了，你的身体没病，是你的精神出问题了。？</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">人的奇妙之处在于想法的彻底改变，有的时候连一瞬间都不需要</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">呆在适合自己的地方才是最好的</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">而成人世界则不然，除了自以为是，我觉得成人世界还在弥散着一种孤独与软弱。 比如阿默的祖父，他在强迫阿默做事时，严厉无比，并且还头头是道地对朋友讲叙教育后代的方式与方法。但当阿默被铁匠强硬地夺走练习簿时，他却只能默默无语地看着、忍受着，一言不发，眼睛中露出一份软弱和无所适从。他只能支配阿默，却保护不了阿默。</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">许多人一旦做了父母，就仿佛从来没经历过童年和成长</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">Everybody is somebody, even a nobody.</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">人都喜欢用优惠券买东西，但是如果一个女的发现一个男的用优惠券带她去餐厅，多少有点觉得不舒服，觉得自己被定义为廉价了，也许是觉得定义廉价的权利应该属于自己。可以主动选择用优惠券买便宜东西，但是被别人送便宜东西就觉得不自在了。但是这样用金钱自我衡量，也是一种物化自己对嘛？难道这种物化出自于自己就是可行的，所谓的男性不能物化女性，只是在强调叫价权属于自己吧。</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+</p>
+</div>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

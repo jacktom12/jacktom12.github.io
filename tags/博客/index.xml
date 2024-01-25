@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on Huzw&#39;s Blog</title>
+    <link>https://blog.huzhiwen.top/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on Huzw&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 21 Jan 2024 13:47:14 +0800</lastBuildDate>
+    <atom:link href="https://blog.huzhiwen.top/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3种方式添加hugo主题</title>
+      <link>https://blog.huzhiwen.top/posts/essay/3%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0hugo%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Sun, 21 Jan 2024 13:47:14 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/essay/3%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0hugo%E4%B8%BB%E9%A2%98/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h2 id="install-newsroom-theme">Install Newsroom Theme</h2>
+<p><strong>Note:</strong> Newsroom uses is styled in sass. Thefore, <strong>hugo-extended version</strong> must be installed on your system.</p>
+<h3 id="option-1-add-newsroom-as-a-git-submodule">Option 1: Add Newsroom as a git submodule</h3>
+<p>Add this theme as a Git submodule inside your Hugo site folder:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git submodule add https://github.com/onweru/newsroom.git themes/newsroom
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="option-2-add-newsroom-as-a-hugo-modulerecommended">Option 2: Add Newsroom as a hugo module <strong>(Recommended)</strong></h3>
+<p>In your config.toml file, set <code>theme</code> field value as follows</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">theme = [&#34;github.com/onweru/newsroom&#34;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then run</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo mod init yourWebsiteName &amp;&amp; hugo mod get -u .
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="option-3-install-newsroom-into-your-theme-directoryleast-diserable">Option 3: Install Newsroom into your theme directory <strong>(Least diserable)</strong></h3>
+<p>From the root of your Hugo website run:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/onweru/newsroom themes/newsroom
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>In your config.toml file, set <code>theme</code> field value as follows</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">theme = &#34;newsroom&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

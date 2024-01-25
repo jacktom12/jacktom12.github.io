@@ -1465,80 +1465,11 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>md文件里引用shortCut</li>
+<li>md文件里引用shortCut
+<img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240125172325.png" alt=""  />
+</li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;div id=&#34;masonry-container&#34; class=&#34;messages-container&#34;&gt;
-</span></span><span class="line"><span class="cl">
-
-
-
-
-
- 
-  <div class="message-box left">
-    <p style="font-weight: bold; font-size: 16px;">***</p>
-    
-      <div class="thumbnail-link" style="cursor: pointer;" onclick="showImage('***')">
-        <img src="***" class="thumbnail">
-      </div>
-    
-  </div>
- 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
- 
-<script>
-
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-  });
-  
- 
-  
- 
-  function showImage(src) {
-    var overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = 0;
-    overlay.style.left = 0;
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-    overlay.style.display = 'flex';
-    overlay.style.alignItems = 'center';
-    overlay.style.justifyContent = 'center';
-
-    var img = document.createElement('img');
-    img.src = src;
-    img.style.maxWidth = '80%';
-    img.style.maxHeight = '80%';
-
-    overlay.appendChild(img);
-
-    overlay.onclick = function () {
-      document.body.removeChild(overlay);
-    };
-
-    document.body.appendChild(overlay);
-  }
-</script>
-
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
+]]></content:encoded>
     </item>
     <item>
       <title>docker安装wordPress</title>
