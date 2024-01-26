@@ -24,6 +24,64 @@
 
  
   <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">有的时候就像滴眼药水，那些没进入眼珠子的难道是因为它们没效果吗？被无情的纸巾擦干了。</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+  <div class="message-box left">
     <p style="font-weight: bold; font-size: 16px;">天气一冷，真的手都懒得洗。</p>
     
   </div>
@@ -1305,64 +1363,6 @@
  
   <div class="message-box left">
     <p style="font-weight: bold; font-size: 16px;">人都喜欢用优惠券买东西，但是如果一个女的发现一个男的用优惠券带她去餐厅，多少有点觉得不舒服，觉得自己被定义为廉价了，也许是觉得定义廉价的权利应该属于自己。可以主动选择用优惠券买便宜东西，但是被别人送便宜东西就觉得不自在了。但是这样用金钱自我衡量，也是一种物化自己对嘛？难道这种物化出自于自己就是可行的，所谓的男性不能物化女性，只是在强调叫价权属于自己吧。</p>
-    
-  </div>
- 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
- 
-<script>
-
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-  });
-  
- 
-  
- 
-  function showImage(src) {
-    var overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = 0;
-    overlay.style.left = 0;
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-    overlay.style.display = 'flex';
-    overlay.style.alignItems = 'center';
-    overlay.style.justifyContent = 'center';
-
-    var img = document.createElement('img');
-    img.src = src;
-    img.style.maxWidth = '80%';
-    img.style.maxHeight = '80%';
-
-    overlay.appendChild(img);
-
-    overlay.onclick = function () {
-      document.body.removeChild(overlay);
-    };
-
-    document.body.appendChild(overlay);
-  }
-</script>
-
-
-
-
-
-
-
- 
-  <div class="message-box left">
-    <p style="font-weight: bold; font-size: 16px;">有的时候就像滴眼药水，那些没进入眼珠子的难道是因为它们没效果吗？被无情的纸巾擦干了。</p>
     
   </div>
  
