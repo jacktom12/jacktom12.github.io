@@ -16,7 +16,68 @@
       <description></description>
       <content:encoded><![CDATA[<hr>
 <div id="masonry-container" class="messages-container">
-<p>
+
+
+
+
+
+
+ 
+  <div class="message-box left">
+    <p style="font-weight: bold; font-size: 16px;">像可口可乐一样冒气泡，现在都是先看到海的画，再看到海</p>
+    
+  </div>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+ 
+<script>
+
+ 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var masonry = new Masonry('#masonry-container', {
+      itemSelector: '.message-box',
+      columnWidth: '.message-box',
+      gutter: 20,
+    });
+    
+   
+    
+  });
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
 
 
 
@@ -141,7 +202,7 @@
     document.body.appendChild(overlay);
   }
 </script>
-</p>
+
 <p>
 
 
