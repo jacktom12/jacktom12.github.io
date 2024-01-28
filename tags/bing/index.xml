@@ -36,16 +36,7 @@
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -80,16 +71,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -124,16 +106,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -168,16 +141,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -212,16 +176,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -256,16 +211,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -300,16 +246,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -344,16 +281,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -388,16 +316,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -432,16 +351,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -476,16 +386,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -520,16 +421,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -564,16 +456,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -608,16 +491,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -652,16 +526,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -696,16 +561,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -740,16 +596,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -784,16 +631,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -828,16 +666,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -872,16 +701,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -916,16 +736,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
@@ -960,16 +771,7 @@ $('#pinterest-container').imagesLoaded().always( function( instance ) {
 
 <script>
 
-$(function() { 
-$('#pinterest-container').imagesLoaded().always( function( instance ) {
-                
 
-        });
-});
-
-
-
- 
   
   document.addEventListener('DOMContentLoaded', function() {
     var masonry = new Masonry('#pinterest-container', {
