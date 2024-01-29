@@ -14,12 +14,9 @@
       <pubDate>Sun, 28 Jan 2024 08:01:32 +0800</pubDate>
       <guid>https://blog.huzhiwen.top/posts/photo/bing%E5%A3%81%E7%BA%B8/</guid>
       <description></description>
-      <content:encoded><![CDATA[<div id="pinterest-container" class="printerests-container">
+      <content:encoded><![CDATA[ <div class="loadingScreen"></div>
+<div id="pinterest-container" class="printerests-container">
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -37,24 +34,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 <p>
- 
-
- 
-   
     
     <div class="card">
        
@@ -72,24 +77,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -107,24 +120,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -142,24 +163,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -177,24 +206,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -212,24 +249,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -247,24 +292,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -282,24 +335,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -317,24 +378,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -352,24 +421,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 </p>
 <p>
- 
-
- 
-   
     
     <div class="card">
        
@@ -387,24 +464,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -422,24 +507,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -457,24 +550,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -492,24 +593,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -527,24 +636,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -562,24 +679,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -597,24 +722,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -632,24 +765,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -667,24 +808,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -702,24 +851,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -737,24 +894,32 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>
 
 
- 
-
- 
-   
     
     <div class="card">
        
@@ -772,15 +937,27 @@
 <script>
 
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#pinterest-container', {
-      itemSelector: '.card',
-      columnWidth: '.card',
-      gutter: 20,
-    });
-  
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+
   
   
 </script>

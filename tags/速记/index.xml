@@ -15,6 +15,7 @@
       <guid>https://blog.huzhiwen.top/posts/essay/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
       <description></description>
       <content:encoded><![CDATA[<hr>
+<div class="loadingScreen"></div>
 <div id="masonry-container" class="messages-container">
 <p>
 
@@ -54,23 +55,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -136,23 +146,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -218,23 +237,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -300,23 +328,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -382,23 +419,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -468,23 +514,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -550,23 +605,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -632,23 +696,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -714,23 +787,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -796,23 +878,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -878,23 +969,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -964,23 +1064,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1046,23 +1155,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1128,23 +1246,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1210,23 +1337,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1292,23 +1428,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1374,23 +1519,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1456,23 +1610,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1538,23 +1701,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1620,23 +1792,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1702,23 +1883,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1784,23 +1974,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1866,23 +2065,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -1948,23 +2156,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -2030,23 +2247,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -2112,23 +2338,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -2194,23 +2429,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -2276,23 +2520,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -2358,23 +2611,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -2440,23 +2702,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
@@ -2522,23 +2793,32 @@
   }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
  
 <script>
 
- 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var masonry = new Masonry('#masonry-container', {
-      itemSelector: '.message-box',
-      columnWidth: '.message-box',
-      gutter: 20,
-    });
-    
-    
-    
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                animate: true,
+                horizontalOrder: true,
+                gutter: 20,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
   });
+  
+ 
   
  
   
