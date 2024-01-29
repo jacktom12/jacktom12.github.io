@@ -962,6 +962,92 @@
   
 </script>
 </p>
+
+    
+    <div class="card">
+       
+        <img src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240123.jpg">
+       
+    
+  </div>
+ 
+
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<script>
+
+
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+
+  
+  
+</script>
+
+
+    
+    <div class="card">
+       
+        <img src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/%E7%B4%A2243.jpg">
+       
+    
+  </div>
+ 
+
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<script>
+
+
+
+
+  $(function() { 
+        
+        $('#pinterest-container').imagesLoaded(function() {
+            $('#pinterest-container').masonry({
+                itemSelector: '.card',
+                columnWidth: 30, 
+                animate: true,
+                horizontalOrder: true,
+                originTop: true
+            });
+        });
+
+        
+        $('#pinterest-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+
+  
+  
+</script>
+
 </div>]]></content:encoded>
     </item>
   </channel>
