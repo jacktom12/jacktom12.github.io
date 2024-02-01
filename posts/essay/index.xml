@@ -63,9 +63,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -156,9 +156,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -249,9 +249,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -342,9 +342,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -435,9 +435,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -528,9 +528,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -621,9 +621,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -718,9 +718,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -811,9 +811,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -904,9 +904,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -997,9 +997,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1090,9 +1090,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1183,9 +1183,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1280,9 +1280,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1373,9 +1373,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1466,9 +1466,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1559,9 +1559,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1652,9 +1652,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1745,9 +1745,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1838,9 +1838,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -1931,9 +1931,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2024,9 +2024,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2117,9 +2117,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2210,9 +2210,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2303,9 +2303,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2396,9 +2396,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2489,9 +2489,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2582,9 +2582,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2675,9 +2675,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2768,9 +2768,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2861,9 +2861,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -2954,9 +2954,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
@@ -3047,9 +3047,9 @@
         $('#masonry-container').imagesLoaded(function() {
             $('#masonry-container').masonry({
                 itemSelector: '.message-box',
-                animate: true,
-                horizontalOrder: true,
-                gutter: 20,
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
                 originTop: true
             });
         });
