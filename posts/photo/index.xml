@@ -6,8 +6,74 @@
     <description>Recent content in 📷相册 on Wen&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 28 Jan 2024 08:01:32 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Feb 2024 10:27:12 +0800</lastBuildDate>
     <atom:link href="https://blog.huzhiwen.top/posts/photo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>喷射战士3</title>
+      <link>https://blog.huzhiwen.top/posts/photo/%E5%96%B7%E5%B0%84%E6%88%98%E5%A3%AB3/</link>
+      <pubDate>Wed, 07 Feb 2024 10:27:12 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/photo/%E5%96%B7%E5%B0%84%E6%88%98%E5%A3%AB3/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js"></script>
+</head>
+<body>
+
+<div data-nanogallery2='{
+	 "thumbnailDisplayTransition":          "none",
+     "thumbnailDisplayTransitionDuration":  500,
+     "thumbnailDisplayInterval":            30,
+     "galleryDisplayTransition":            "none",
+     "galleryDisplayTransitionDuration":    500,
+     "galleryDisplayMode": "rows",
+     "galleryMaxRows": 3,
+     "thumbnailWidth": "auto",
+     "thumbnailDisplayTransition": "slideDown2",
+     "thumbnailDisplayInterval": 100,
+     "thumbnailDisplayOutsideScreen": "false",
+     "eventsDebounceDelay": 10,
+     "thumbnailL1BorderHorizontal": 0,
+     "thumbnailL1BorderVertical": 0,
+     "thumbnailLabel": {
+        "titleFontSize": "0.6em"
+     },
+     "thumbnailGutterWidth": 10,
+     "thumbnailHoverEffect2": "image_scale_1.00_1.10|label_backgroundColor_rgba(0,0,0,0)_rgba(255,255,255,0)",
+     "galleryTheme": {
+        "thumbnail": {
+            "borderRadius": "10px"
+        }
+     },
+     "thumbnailToolbarImage": {
+        "topLeft": "",
+        "topRight": "",
+        "bottomLeft": "",
+        "bottomRight": ""
+     },
+     "viewerToolbar":   {
+        "display": true,
+        "standard": "label"
+     },
+     "viewerTools":     {
+        "topLeft":    "pageCounter, playPauseButton",
+        "topRight":   "downloadButton, rotateLeft, zoomButton, fullscreenButton, closeButton"
+     },
+     "viewerGalleryTWidth": 40,
+     "viewerGalleryTHeight": 40
+}'>
+    
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240207102647.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240207102647.png"></a>
+
+</div>
+</body>
+</html>
+]]></content:encoded>
+    </item>
     <item>
       <title>bing壁纸</title>
       <link>https://blog.huzhiwen.top/posts/photo/bing%E5%A3%81%E7%BA%B8/</link>
