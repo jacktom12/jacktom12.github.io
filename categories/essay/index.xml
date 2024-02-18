@@ -3967,7 +3967,7 @@
 
 </div>
 <audio controls loop autoplay>
-  <source src="/music/2.mp3" type="audio/mp3">
+  <source src="music/2.mp3/" type="audio/mp3">
 </audio>
 ]]></content:encoded>
     </item>
