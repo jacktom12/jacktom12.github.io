@@ -25,101 +25,6 @@
  
  <div class="message-box left">
   
-  
-  
-    
-  
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=27836461&auto=1&height=32"></iframe>
-
-
-    
-</div>
-  <style>
-  .music-card {
-    background-color: rgba(255, 255, 255, 0.8);  
-    border-radius: 10px;
-     
-    width: 260px;
-    height: 86px;
-  }
-  
-  .dark .music-card {
-    background-color: rgba(46, 46, 51, 0.8);  
-    color: #fff;  
-     
-  }
-</style>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
- 
-
-
-
- 
-<script>
-
- $(function() { 
-        
-        $('#masonry-container').imagesLoaded(function() {
-            $('#masonry-container').masonry({
-                itemSelector: '.message-box',
-                columnWidth: '.message-box',
-				percentPosition: true,
-                gutter: 30,
-                originTop: true
-            });
-        });
-
-        
-        $('#masonry-container').imagesLoaded().always( function( instance ) {
-        
-             $('.loadingScreen').fadeOut();
-        })
-  });
-  
- 
-  
- 
-  
- 
-  function showImage(src) {
-    var overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = 0;
-    overlay.style.left = 0;
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-    overlay.style.display = 'flex';
-    overlay.style.alignItems = 'center';
-    overlay.style.justifyContent = 'center';
-
-    var img = document.createElement('img');
-    img.src = src;
-    img.style.maxWidth = '80%';
-    img.style.maxHeight = '80%';
-
-    overlay.appendChild(img);
-
-    overlay.onclick = function () {
-      document.body.removeChild(overlay);
-    };
-
-    document.body.appendChild(overlay);
-  }
-</script>
-
-
-
-
-
-
-
- 
- <div class="message-box left">
-  
     <p style="font-weight: bold; font-size: 16px;">远离法国的圭亚那，自然条件极为恶劣，这些囚犯在这个充斥着疟疾等疾病的热带雨林里日夜劳作，在沼泽烂泥里摸爬滚打，每天连饭都吃不饱，一年下来竟然有40%的囚犯死亡！最让我震惊的是，法国这么个所谓文明国家，现在天天听他们鼓吹民主自由，一直到二十世纪六十年代才迫于压力取缔了这个极为残忍、不人道的监狱系统</p>
   
   
@@ -143,6 +48,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -238,6 +149,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -333,6 +250,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -428,6 +351,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -523,6 +452,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -620,6 +555,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -715,6 +656,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -810,101 +757,12 @@
     color: #fff;  
      
   }
-</style>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
- 
-
-
-
- 
-<script>
-
- $(function() { 
-        
-        $('#masonry-container').imagesLoaded(function() {
-            $('#masonry-container').masonry({
-                itemSelector: '.message-box',
-                columnWidth: '.message-box',
-				percentPosition: true,
-                gutter: 30,
-                originTop: true
-            });
-        });
-
-        
-        $('#masonry-container').imagesLoaded().always( function( instance ) {
-        
-             $('.loadingScreen').fadeOut();
-        })
-  });
   
  
-  
- 
-  
- 
-  function showImage(src) {
-    var overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = 0;
-    overlay.style.left = 0;
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-    overlay.style.display = 'flex';
-    overlay.style.alignItems = 'center';
-    overlay.style.justifyContent = 'center';
-
-    var img = document.createElement('img');
-    img.src = src;
-    img.style.maxWidth = '80%';
-    img.style.maxHeight = '80%';
-
-    overlay.appendChild(img);
-
-    overlay.onclick = function () {
-      document.body.removeChild(overlay);
-    };
-
-    document.body.appendChild(overlay);
+  audio {
+    display: none;
   }
-</script>
-
-
-
-
-
-
-
  
- <div class="message-box left">
-  
-  
-  
-    
-  
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=19566006&auto=1&height=32"></iframe>
-
-
-    
-</div>
-  <style>
-  .music-card {
-    background-color: rgba(255, 255, 255, 0.8);  
-    border-radius: 10px;
-     
-    width: 260px;
-    height: 86px;
-  }
-  
-  .dark .music-card {
-    background-color: rgba(46, 46, 51, 0.8);  
-    color: #fff;  
-     
-  }
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1000,6 +858,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1095,6 +959,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1190,6 +1060,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1285,6 +1161,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1380,6 +1262,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1475,6 +1363,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1570,6 +1464,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1669,6 +1569,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1764,6 +1670,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1859,6 +1771,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1954,6 +1872,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2049,6 +1973,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2144,6 +2074,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2243,6 +2179,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2338,6 +2280,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2433,6 +2381,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2528,6 +2482,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2623,6 +2583,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2718,6 +2684,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2813,6 +2785,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2908,6 +2886,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3003,6 +2987,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3098,6 +3088,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3193,6 +3189,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3288,6 +3290,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3383,6 +3391,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3478,6 +3492,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3573,6 +3593,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3668,6 +3694,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3763,6 +3795,12 @@
     color: #fff;  
      
   }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3858,101 +3896,12 @@
     color: #fff;  
      
   }
-</style>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
- 
-
-
-
- 
-<script>
-
- $(function() { 
-        
-        $('#masonry-container').imagesLoaded(function() {
-            $('#masonry-container').masonry({
-                itemSelector: '.message-box',
-                columnWidth: '.message-box',
-				percentPosition: true,
-                gutter: 30,
-                originTop: true
-            });
-        });
-
-        
-        $('#masonry-container').imagesLoaded().always( function( instance ) {
-        
-             $('.loadingScreen').fadeOut();
-        })
-  });
   
  
-  
- 
-  
- 
-  function showImage(src) {
-    var overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = 0;
-    overlay.style.left = 0;
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-    overlay.style.display = 'flex';
-    overlay.style.alignItems = 'center';
-    overlay.style.justifyContent = 'center';
-
-    var img = document.createElement('img');
-    img.src = src;
-    img.style.maxWidth = '80%';
-    img.style.maxHeight = '80%';
-
-    overlay.appendChild(img);
-
-    overlay.onclick = function () {
-      document.body.removeChild(overlay);
-    };
-
-    document.body.appendChild(overlay);
+  audio {
+    display: none;
   }
-</script>
-
-
-
-
-
-
-
  
- <div class="message-box left">
-  
-    <p style="font-weight: bold; font-size: 16px;">Everybody is somebody, even a nobody.</p>
-  
-  
-  
-    
-  
-
-    
-</div>
-  <style>
-  .music-card {
-    background-color: rgba(255, 255, 255, 0.8);  
-    border-radius: 10px;
-     
-    width: 260px;
-    height: 86px;
-  }
-  
-  .dark .music-card {
-    background-color: rgba(46, 46, 51, 0.8);  
-    color: #fff;  
-     
-  }
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -4017,6 +3966,9 @@
 </script>
 
 </div>
+<audio controls loop autoplay>
+  <source src="/music/2.mp3" type="audio/mp3">
+</audio>
 ]]></content:encoded>
     </item>
   </channel>
