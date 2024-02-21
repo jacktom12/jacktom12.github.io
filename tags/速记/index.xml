@@ -16,7 +16,210 @@
       <description></description>
       <content:encoded><![CDATA[<div class="loadingScreen"></div>
 <div id="masonry-container" class="messages-container">
-<p>
+和平部负责战争，真理部负责造谣，友爱部负责拷打，富裕部负责挨饿
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">和平部负责战争，真理部负责造谣，友爱部负责拷打，富裕部负责挨饿</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">在他们看来，战争无非是一场继续不断的灾祸，象潮汐一样在他们身上淹过去又淹过来。哪一方得胜对他们毫无相干。他们只知道改朝换代不过是为新的主子干以前同样的活，新主子对待他们与以前的主子并无差别</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
 
 
 
@@ -4469,7 +4672,7 @@
     document.body.appendChild(overlay);
   }
 </script>
-</p>
+
 </div>
 <audio controls loop autoplay>
   <source src="music/2.mp3" type="audio/mp3">
