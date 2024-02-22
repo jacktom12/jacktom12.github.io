@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Wen&#39;s Blog</title>
+    <link>https://blog.huzhiwen.top/tags/linux/</link>
+    <description>Recent content in linux on Wen&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 21 Jan 2024 14:06:29 +0800</lastBuildDate>
+    <atom:link href="https://blog.huzhiwen.top/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux常用命令</title>
+      <link>https://blog.huzhiwen.top/posts/essay/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 21 Jan 2024 14:06:29 +0800</pubDate>
+      <guid>https://blog.huzhiwen.top/posts/essay/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h2 id="命令历史查询">命令历史查询</h2>
+<ul>
+<li>
+<p>清空命令历史 <code>history -c</code></p>
+</li>
+<li>
+<p>分页查看记录 <code>history | more</code></p>
+</li>
+<li>
+<p>查询出来记录后选中 :　<code>!323</code></p>
+</li>
+<li>
+<p>单条命令删除 <code>history -d 111</code></p>
+</li>
+<li>
+<p>查看最近五条命令 <code>history 5</code></p>
+</li>
+<li>
+<p>按条件查询命令 <code>history | grep nohup</code></p>
+</li>
+<li>
+<p>使用 <code>Ctrl + R</code> 搜索历史命令再按 <code>Ctrl + G</code> 退出搜索。
+<img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240109142947.png" alt=""  />
+</p>
+</li>
+<li>
+<p>4种方式快速查找上一条命令
+<img loading="lazy" src="https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240109143056.png" alt=""  />
+</p>
+</li>
+</ul>
+<h2 id="日志查询">日志查询</h2>
+<ul>
+<li>当直接去 grep 的时候，花费约 30ms<code>time (grep xx tracelog/xx.log.2020-11-02)</code></li>
+<li>tail 最后 10000 行日志 速度一般<code>time (tail -n10000 tracelog/rpc-server-digest.log.2020-11-02 | grep 21885857160436159747673092289)</code></li>
+<li>tac 命令可以反向对文件做输出，<code>time (tac tracelog/rpc-server-digest.log.2020-11-02 | grep -m1 21885857160436159747673092289)</code></li>
+<li><code>Q: tac 的全称是什么 A: cat &lt;-&gt; tac</code></li>
+</ul>
+<h2 id="less命令">less命令</h2>
+<ul>
+<li>查看进程信息并通过less分页显示<code>ps -ef | less</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">用ps -def | grep查找进程很方便，最后一行总是会grep自己。
+</span></span><span class="line"><span class="cl"> 用grep -v参数可以将grep命令排除掉，因此修改版本如下：
+</span></span><span class="line"><span class="cl"> 接在再用awk提取一下进程ID.
+</span></span><span class="line"><span class="cl"> ps -def | grep calibre | grep -v grep | awk &#39;{print $2}&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>shift + G</code> 命令到文件尾部 然后输入 _？_加上你要搜索的关键字例如 ？1213</li>
+<li>查看命令历史使用记录并通过less分页显示 <code>history | less</code>
+<ul>
+<li><code>ctrl b</code>后翻页,<code>ctrl f</code>前翻页，<code>enter</code>下一行，<code>空格键</code>下一页，<code>Q</code>退出</li>
+</ul>
+</li>
+<li>浏览多个文件<code>less log2013.log log2014.log</code>
+<ul>
+<li><em>按 n 向上查找关键字 shift+n 反向查找关键字</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="sed">sed</h2>
+<ul>
+<li><code>sed -n '5,10p' filename</code> 这样你就可以只查看文件的第5行到第10行。</li>
+<li><code>sed -n '/2014-12-17 16:17:20/,/2014-12-17 16:17:36/p' test.log</code>按照时间段</li>
+</ul>
+<h2 id="more">more</h2>
+<p>more命令是一个基于vi编辑器文本过滤器，它以全屏幕的方式按页显示文本文件的内容，支持vi中的关键字定位操作。more名单中内置了若干快捷键，常用的有H（获得帮助信息），Enter（向下翻滚一行），空格（向下滚动一屏），Q（退出命令）。more命令从前向后读取文件，因此在启动时就加载整个文件
+该命令一次显示一屏文本，满屏后停下来，并且在屏幕的底部出现一个提示信息，给出至今己显示的该文件的百分比：–More–（XX%)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">- more的语法：more 文件名
+</span></span><span class="line"><span class="cl">- Enter 向下n行，需要定义，默认为1行
+</span></span><span class="line"><span class="cl">- Ctrl f 向下滚动一屏
+</span></span><span class="line"><span class="cl">- 空格键 向下滚动一屏
+</span></span><span class="line"><span class="cl">- Ctrl b 返回上一屏
+</span></span><span class="line"><span class="cl">- = 输出当前行的行号
+</span></span><span class="line"><span class="cl">- :f 输出文件名和当前行的行号
+</span></span><span class="line"><span class="cl">- v 调用vi编辑器
+</span></span><span class="line"><span class="cl">- !命令 调用Shell，并执行命令
+</span></span><span class="line"><span class="cl">- q退出more
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="cat">cat</h2>
+<ul>
+<li>一次显示整个文件 :<code>$ cat filename</code></li>
+<li>从键盘创建一个文件 :<code>$cat &gt; filename</code> 以<code>ctrl+d</code>作为输入结束</li>
+<li>将几个文件合并为一个文件：<code>$cat file1 file2 &gt; file</code>只能创建新文件,不能编辑已有文件.</li>
+<li>将一个日志文件的内容追加到另外一个 :<code>$cat -n textfile1 &gt; textfile2</code></li>
+<li>清空一个日志文件:<code>$cat : &gt;textfile2</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">注意：&gt; 意思是创建，&gt;&gt;是追加。千万不要弄混了。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="head">head</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">命令格式: tail[必要参数][选择参数][文件]  
+</span></span><span class="line"><span class="cl">-f 循环读取  
+</span></span><span class="line"><span class="cl">-q 不显示处理信息  
+</span></span><span class="line"><span class="cl">-v 显示详细的处理信息  
+</span></span><span class="line"><span class="cl">-c&lt;数目&gt; 显示的字节数  
+</span></span><span class="line"><span class="cl">-n&lt;行数&gt; 显示行数  
+</span></span><span class="line"><span class="cl">-q, --quiet, --silent 从不输出给出文件名的首部  
+</span></span><span class="line"><span class="cl">-s, --sleep-interval=S 与-f合用,表示在每次反复的间隔休眠S秒
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>tail -n 10 test.log</code>查询日志尾部最后10行的日志;</li>
+<li><code>tail -n +10 test.log</code>查询10行之后的所有日志;</li>
+<li><code>tail -fn 1000 test.log</code>循环实时查看最后1000行记录(最常用的)</li>
+<li><code>tail -fn 1000 test.log | grep</code> 关键字</li>
+<li><code>tail -n +3 filename &gt; newfile</code>删除文件的前两行 写入新文件</li>
+<li><code>tail -n +1 made.txt made2.txt</code> 同时查看2个文档从第一行开始</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">==</span>&gt; made.txt &lt;<span class="o">==</span>
+</span></span><span class="line"><span class="cl">jskdajflkdsf
+</span></span><span class="line"><span class="cl">wejfoiwji<span class="p">&amp;</span>kldsjafkl
+</span></span><span class="line"><span class="cl"><span class="c1">##$%dsfasdf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; made2.txt &lt;<span class="o">==</span>
+</span></span><span class="line"><span class="cl">joiasjdofidsa
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Dataview <span class="o">(</span>inline field <span class="s1">&#39;=&gt; made.txt &lt;==
+</span></span></span><span class="line"><span class="cl"><span class="s1">jskdajflkdsf
+</span></span></span><span class="line"><span class="cl"><span class="s1">wejfoiwji&amp;kldsjafkl
+</span></span></span><span class="line"><span class="cl"><span class="s1">##$%dsfasdf
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">==&gt; made2.txt &lt;==
+</span></span></span><span class="line"><span class="cl"><span class="s1">joiasjdofidsa&#39;</span><span class="o">)</span>: Error: 
+</span></span><span class="line"><span class="cl">-- PARSING FAILED --------------------------------------------------
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&gt; <span class="m">1</span> <span class="p">|</span> <span class="o">=</span>&gt; made.txt &lt;<span class="o">==</span>
+</span></span><span class="line"><span class="cl">    <span class="p">|</span> ^
+</span></span><span class="line"><span class="cl">  <span class="m">2</span> <span class="p">|</span> jskdajflkdsf
+</span></span><span class="line"><span class="cl">  <span class="m">3</span> <span class="p">|</span> wejfoiwji<span class="p">&amp;</span>kldsjafkl
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Expected one of the following: 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;(&#39;</span>, <span class="s1">&#39;null&#39;</span>, boolean, date, duration, file link, list <span class="o">(</span><span class="s1">&#39;[1, 2, 3]&#39;</span><span class="o">)</span>, negated field, number, object <span class="o">(</span><span class="s1">&#39;{ a: 1, b: 2 }&#39;</span><span class="o">)</span>, string, variable
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="linux日志文件说明">linux日志文件说明</h2>
+<ul>
+<li><code>/var/log/message</code>系统启动后的信息和错误日志，是Red Hat Linux中最常用的日志之一</li>
+<li><code>/var/log/secure</code>与安全相关的日志信息</li>
+<li><code>/var/log/maillog</code>与邮件相关的日志信息</li>
+<li><code>/var/log/cron</code>与定时任务相关的日志信息</li>
+<li><code>/var/log/spooler</code>与UUCP和news设备相关的日志信息</li>
+<li><code>/var/log/boot.log</code>守护进程启动和停止相关的日志消息</li>
+<li><code>/var/log/wtmp</code>该日志文件永久记录每个用户登录、注销及系统的启动、停机的事件</li>
+</ul>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
