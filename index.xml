@@ -1198,6 +1198,309 @@
  
  <div class="message-box left">
   
+    <p style="font-weight: bold; font-size: 16px;">路金波旗下作家冯唐表示，自己不喜欢韩寒写的东西，也完全不喜欢方舟子，但肯定其现实存在的积极意义。冯唐称某些媒体和公知助推韩寒成大名，人们认为韩寒是当代鲁迅，崇拜韩寒“指鹿为马”。他称能容欺世盗名不容“指鹿为马”是底线。这个现世认为不读书、不用功写作、下笔就能有神如助，不调查、不研究、大拇指夹着笔就能轻松论革命、论民主、论自由、出书无数，千万双手就在面前欢呼，捷径就在眼前，轻松出门，大道如青天。</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+<p>
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">自由职业者木子美在微博中称：“从文字工作者的经验来看，韩寒能“写”出三重门，而无法解释其中的典故运用，就是非常矛盾的事。他对自己作品的不熟悉程度，以及“巨额知识来源不明”的种种表现，就是我们质疑他的根据。”</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">四川外语学院教授刘国强称：韩寒事件告诉我们，人们对感情的渴求远远大于对真相的追求</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
     <p style="font-weight: bold; font-size: 16px;">我的quest2应该是恢复出厂导致最新的手机客户端匹配不上老版本系统了。</p>
   
   
@@ -6046,7 +6349,7 @@
     document.body.appendChild(overlay);
   }
 </script>
-
+</p>
 </div>
 <audio controls loop autoplay>
   <source src="music/2.mp3" type="audio/mp3">
