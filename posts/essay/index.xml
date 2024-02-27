@@ -635,6 +635,108 @@
       <description></description>
       <content:encoded><![CDATA[<div class="loadingScreen"></div>
 <div id="masonry-container" class="messages-container">
+<p>。
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">很多书籍都说，乐观是幸福、健康和长寿的关键。但是，英国巴斯大学的一项研究表明，乐观实际上与较低的认知有关，认知能力高的人对未来往往更加现实和悲观。这也许表明，认知能力低的人更可能幸福、健康和长寿？当然，过度乐观可能会导致糟糕的财务决策，比如过度消费和负债，使得生活状况很糟糕</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
 
 
 
@@ -735,7 +837,7 @@
     document.body.appendChild(overlay);
   }
 </script>
-
+</p>
 <p>
 
 
