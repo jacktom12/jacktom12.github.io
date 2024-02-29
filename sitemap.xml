@@ -2,25 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.huzhiwen.top/posts/</loc>
-    <lastmod>2024-02-25T20:26:16+08:00</lastmod>
+    <loc>https://blog.huzhiwen.top/posts/essay/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
   </url><url>
-    <loc>https://blog.huzhiwen.top/posts/photo/</loc>
-    <lastmod>2024-02-25T20:26:16+08:00</lastmod>
+    <loc>https://blog.huzhiwen.top/posts/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
   </url><url>
     <loc>https://blog.huzhiwen.top/categories/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/categories/essay/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/tags/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/tags/%E5%86%B0%E5%BF%83/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/tags/%E6%9E%97%E5%BE%BD%E5%9B%A0/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/posts/essay/%E6%88%91%E4%BB%AC%E5%A4%AA%E5%A4%AA%E7%9A%84%E5%AE%A2%E5%8E%85-%E5%86%B0%E5%BF%83/</loc>
+    <lastmod>2024-02-29T17:07:25+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.huzhiwen.top/posts/photo/</loc>
     <lastmod>2024-02-25T20:26:16+08:00</lastmod>
   </url><url>
     <loc>https://blog.huzhiwen.top/posts/photo/little-big-snake/</loc>
     <lastmod>2024-02-25T20:26:16+08:00</lastmod>
   </url><url>
     <loc>https://blog.huzhiwen.top/categories/photo/</loc>
-    <lastmod>2024-02-25T20:26:16+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.huzhiwen.top/tags/</loc>
-    <lastmod>2024-02-25T20:26:16+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.huzhiwen.top/</loc>
     <lastmod>2024-02-25T20:26:16+08:00</lastmod>
   </url><url>
     <loc>https://blog.huzhiwen.top/tags/%E6%88%AA%E5%9B%BE/</loc>
@@ -58,12 +73,6 @@
   </url><url>
     <loc>https://blog.huzhiwen.top/tags/%E5%A3%81%E7%BA%B8/</loc>
     <lastmod>2024-01-28T08:01:32+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.huzhiwen.top/posts/essay/</loc>
-    <lastmod>2024-01-28T05:28:10+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.huzhiwen.top/categories/essay/</loc>
-    <lastmod>2024-01-28T05:28:10+08:00</lastmod>
   </url><url>
     <loc>https://blog.huzhiwen.top/tags/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91/</loc>
     <lastmod>2024-01-28T05:28:10+08:00</lastmod>
