@@ -25,6 +25,206 @@
  
  <div class="message-box left">
   
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">政府最怕啥？最怕泄密和集会，最怕社会的氛围影响到军人，军队里的人心没了，军队就没正义感，那政权就不稳固，战争也不可能打得赢。</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
     <p style="font-weight: bold; font-size: 16px;">希特勒在 44 次暗杀行动中幸存。所以，既没有上帝，也没有魔鬼。只有一个问题：你跟不跟。自己决定。</p>
   
   
