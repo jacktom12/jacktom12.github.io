@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>📷相册 on Wen&#39;s Blog</title>
-    <link>https://blog.huzhiwen.top/posts/photo/</link>
-    <description>Recent content in 📷相册 on Wen&#39;s Blog</description>
+    <title>photo on Wen&#39;s Blog</title>
+    <link>https://blog.huzhiwen.top/categories/photo/</link>
+    <description>Recent content in photo on Wen&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Sun, 25 Feb 2024 20:26:16 +0800</lastBuildDate>
-    <atom:link href="https://blog.huzhiwen.top/posts/photo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.huzhiwen.top/categories/photo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>little big snake</title>
       <link>https://blog.huzhiwen.top/posts/photo/little-big-snake/</link>
