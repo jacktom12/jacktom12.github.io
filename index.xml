@@ -7880,7 +7880,7 @@
       <link>https://blog.199105.xyz/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.199105.xyz/links/</guid>
-      <description>阮一峰网络博客 阮一峰 Sulv’s Blog paperMod美化 网易云歌单 我的歌单 calibre图书 我的书库 豆瓣记录 我的豆瓣 涛叔 个人学习笔记 Hacpe</description>
+      <description>阮一峰网络博客 阮一峰 Sulv’s Blog paperMod美化 涛叔 个人学习笔记 Hacper’s Blog hacper 赤赤的象牙塔 他看过的电影 wenhui 收藏的美食漫画 zhheo 导航--</description>
       <content:encoded><![CDATA[<p><a target="_blank" href=https://www.ruanyifeng.com/blog/ title=阮一峰网络博客 class="friendurl">
   <div class="frienddiv">
     <div class="frienddivleft">
@@ -7904,43 +7904,7 @@
     </div>
   </div>
 </a>
-
-<a target="_blank" href=https://music.199105.xyz/ title=网易云歌单 class="friendurl">
-  <div class="frienddiv">
-    <div class="frienddivleft">
-      <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/sheep090.svg />
-    </div>
-    <div class="frienddivright">
-      <div class="friendname">网易云歌单</div>
-      <div class="friendinfo">我的歌单</div>
-    </div>
-  </div>
-</a>
-
-<a target="_blank" href=https://books.199105.xyz/ title=calibre图书 class="friendurl">
-  <div class="frienddiv">
-    <div class="frienddivleft">
-      <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/sheep6.svg />
-    </div>
-    <div class="frienddivright">
-      <div class="friendname">calibre图书</div>
-      <div class="friendinfo">我的书库</div>
-    </div>
-  </div>
-</a>
-
-<a target="_blank" href=https://douban.199105.xyz/ title=豆瓣记录 class="friendurl">
-  <div class="frienddiv">
-    <div class="frienddivleft">
-      <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/profile.gif />
-    </div>
-    <div class="frienddivright">
-      <div class="friendname">豆瓣记录</div>
-      <div class="friendinfo">我的豆瓣</div>
-    </div>
-  </div>
-</a>
-
+</p>
 <a target="_blank" href=https://taoshu.in/ title=涛叔 class="friendurl">
   <div class="frienddiv">
     <div class="frienddivleft">
@@ -7952,7 +7916,7 @@
     </div>
   </div>
 </a>
-</p>
+
 <p><a target="_blank" href=https://hacperme.com/ title=Hacper’s&#32;Blog class="friendurl">
   <div class="frienddiv">
     <div class="frienddivleft">
@@ -8001,7 +7965,7 @@
   </div>
 </a>
 
-<a target="_blank" href=https://stats.uptimerobot.com/KUavUzsZMa title=VPS class="friendurl">
+<a target="_blank" href=https://stats.uptimerobot.com/Q9cnZ1xMzJ title=VPS class="friendurl">
   <div class="frienddiv">
     <div class="frienddivleft">
       <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240122090207.png />
@@ -8009,6 +7973,54 @@
     <div class="frienddivright">
       <div class="friendname">VPS</div>
       <div class="friendinfo">VPS</div>
+    </div>
+  </div>
+</a>
+
+<a target="_blank" href=https://199105.xyz/ title=阿里云盘 class="friendurl">
+  <div class="frienddiv">
+    <div class="frienddivleft">
+      <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/20240122090207.png />
+    </div>
+    <div class="frienddivright">
+      <div class="friendname">阿里云盘</div>
+      <div class="friendinfo">阿里云</div>
+    </div>
+  </div>
+</a>
+
+<a target="_blank" href=https://music.199105.xyz/ title=网易云歌单 class="friendurl">
+   <div class="frienddiv">
+     <div class="frienddivleft">
+       <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/sheep090.svg />
+     </div>
+     <div class="frienddivright">
+       <div class="friendname">网易云歌单</div>
+       <div class="friendinfo">我的歌单</div>
+     </div>
+   </div>
+ </a>
+
+<a target="_blank" href=https://books.199105.xyz/ title=calibre图书 class="friendurl">
+  <div class="frienddiv">
+    <div class="frienddivleft">
+      <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/sheep6.svg />
+    </div>
+    <div class="frienddivright">
+      <div class="friendname">calibre图书</div>
+      <div class="friendinfo">我的书库</div>
+    </div>
+  </div>
+</a>
+
+<a target="_blank" href=https://douban.199105.xyz/ title=豆瓣记录 class="friendurl">
+  <div class="frienddiv">
+    <div class="frienddivleft">
+      <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/profile.gif />
+    </div>
+    <div class="frienddivright">
+      <div class="friendname">豆瓣记录</div>
+      <div class="friendinfo">我的豆瓣</div>
     </div>
   </div>
 </a>
