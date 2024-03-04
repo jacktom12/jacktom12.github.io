@@ -7904,7 +7904,7 @@
     </div>
   </div>
 </a>
-</p>
+
 <a target="_blank" href=https://taoshu.in/ title=涛叔 class="friendurl">
   <div class="frienddiv">
     <div class="frienddivleft">
@@ -7917,7 +7917,7 @@
   </div>
 </a>
 
-<p><a target="_blank" href=https://hacperme.com/ title=Hacper’s&#32;Blog class="friendurl">
+<a target="_blank" href=https://hacperme.com/ title=Hacper’s&#32;Blog class="friendurl">
   <div class="frienddiv">
     <div class="frienddivleft">
       <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/blowfish_logo.png />
@@ -7990,16 +7990,16 @@
 </a>
 
 <a target="_blank" href=https://music.199105.xyz/ title=网易云歌单 class="friendurl">
-   <div class="frienddiv">
-     <div class="frienddivleft">
-       <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/sheep090.svg />
-     </div>
-     <div class="frienddivright">
-       <div class="friendname">网易云歌单</div>
-       <div class="friendinfo">我的歌单</div>
-     </div>
-   </div>
- </a>
+  <div class="frienddiv">
+    <div class="frienddivleft">
+      <img class="myfriend" src=https://cdn.jsdelivr.net/gh/jacktom12/blogPic@main/sheep090.svg />
+    </div>
+    <div class="frienddivright">
+      <div class="friendname">网易云歌单</div>
+      <div class="friendinfo">我的歌单</div>
+    </div>
+  </div>
+</a>
 
 <a target="_blank" href=https://books.199105.xyz/ title=calibre图书 class="friendurl">
   <div class="frienddiv">
