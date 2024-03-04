@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Wen&#39;s Blog</title>
-    <link>https://blog.huzhiwen.top/series/</link>
+    <link>https://blog.199105.xyz/series/</link>
     <description>Recent content in Series on Wen&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://blog.huzhiwen.top/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.199105.xyz/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
