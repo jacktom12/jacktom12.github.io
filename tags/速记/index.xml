@@ -16,7 +16,411 @@
       <description></description>
       <content:encoded><![CDATA[<div class="loadingScreen"></div>
 <div id="masonry-container" class="messages-container">
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">地球一定要以旧换新保持新颜</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
 <p>
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">老婆眼里没英雄，这台词金句</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">你是好人办坏事，你把良心绑在卡秋莎射出去了。满天都是良心</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
+
+
+
+
+
+ 
+ <div class="message-box left">
+  
+    <p style="font-weight: bold; font-size: 16px;">一个人主动让肉体消亡，灵魂会更加的痛苦不堪，灵魂不会消失。</p>
+  
+  
+  
+    
+  
+
+    
+</div>
+  <style>
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 10px;
+     
+    width: 260px;
+    height: 86px;
+  }
+  
+  .dark .music-card {
+    background-color: rgba(46, 46, 51, 0.8);  
+    color: #fff;  
+     
+  }
+  
+ 
+  audio {
+    display: none;
+  }
+ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+ 
+
+
+
+ 
+<script>
+
+ $(function() { 
+        
+        $('#masonry-container').imagesLoaded(function() {
+            $('#masonry-container').masonry({
+                itemSelector: '.message-box',
+                columnWidth: '.message-box',
+				percentPosition: true,
+                gutter: 30,
+                originTop: true
+            });
+        });
+
+        
+        $('#masonry-container').imagesLoaded().always( function( instance ) {
+        
+             $('.loadingScreen').fadeOut();
+        })
+  });
+  
+ 
+  
+ 
+  
+ 
+  function showImage(src) {
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+
+    var img = document.createElement('img');
+    img.src = src;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+
+    overlay.appendChild(img);
+
+    overlay.onclick = function () {
+      document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+  }
+</script>
+
+
 
 
 
