@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.199105.xyz/posts/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.199105.xyz/posts/photo/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.199105.xyz/categories/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.199105.xyz/categories/photo/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.199105.xyz/tags/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.199105.xyz/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.199105.xyz/tags/%E7%94%B5%E5%BD%B1/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.199105.xyz/posts/photo/%E7%94%B5%E5%BD%B1%E6%88%AA%E5%9B%BE/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.199105.xyz/tags/%E6%88%AA%E5%9B%BE/</loc>
+    <lastmod>2024-04-13T10:34:45+08:00</lastmod>
+  </url><url>
     <loc>https://blog.199105.xyz/posts/essay/</loc>
     <lastmod>2024-04-08T10:44:26+08:00</lastmod>
   </url><url>
-    <loc>https://blog.199105.xyz/posts/</loc>
-    <lastmod>2024-04-08T10:44:26+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.199105.xyz/categories/</loc>
-    <lastmod>2024-04-08T10:44:26+08:00</lastmod>
-  </url><url>
     <loc>https://blog.199105.xyz/categories/essay/</loc>
-    <lastmod>2024-04-08T10:44:26+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.199105.xyz/tags/</loc>
-    <lastmod>2024-04-08T10:44:26+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.199105.xyz/</loc>
     <lastmod>2024-04-08T10:44:26+08:00</lastmod>
   </url><url>
     <loc>https://blog.199105.xyz/tags/%E5%9C%86%E6%A1%8C%E6%B4%BE/</loc>
@@ -29,16 +44,10 @@
     <loc>https://blog.199105.xyz/tags/%E7%BB%BC%E8%89%BA/</loc>
     <lastmod>2024-04-08T10:44:26+08:00</lastmod>
   </url><url>
-    <loc>https://blog.199105.xyz/posts/photo/</loc>
-    <lastmod>2024-03-15T15:37:26+08:00</lastmod>
-  </url><url>
     <loc>https://blog.199105.xyz/tags/bing/</loc>
     <lastmod>2024-03-15T15:37:26+08:00</lastmod>
   </url><url>
     <loc>https://blog.199105.xyz/posts/photo/bing%E5%A3%81%E7%BA%B82/</loc>
-    <lastmod>2024-03-15T15:37:26+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.199105.xyz/categories/photo/</loc>
     <lastmod>2024-03-15T15:37:26+08:00</lastmod>
   </url><url>
     <loc>https://blog.199105.xyz/tags/%E5%A3%81%E7%BA%B8/</loc>
@@ -52,9 +61,6 @@
   </url><url>
     <loc>https://blog.199105.xyz/tags/%E8%90%8D%E8%B8%AA%E4%BE%A0%E5%BD%B1/</loc>
     <lastmod>2024-03-13T06:21:03+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.199105.xyz/tags/%E7%94%B5%E5%BD%B1/</loc>
-    <lastmod>2024-03-11T07:30:23+08:00</lastmod>
   </url><url>
     <loc>https://blog.199105.xyz/posts/essay/%E9%87%91%E5%87%AF%E7%91%9E%E5%92%8C%E5%AE%89%E8%BF%AA%E8%80%83%E5%A4%AB%E6%9B%BC%E8%B6%85%E8%B6%8A%E4%BC%9F%E5%A4%A7/</loc>
     <lastmod>2024-03-11T07:30:23+08:00</lastmod>
@@ -81,9 +87,6 @@
     <lastmod>2024-02-29T17:07:25+08:00</lastmod>
   </url><url>
     <loc>https://blog.199105.xyz/posts/photo/little-big-snake/</loc>
-    <lastmod>2024-02-25T20:26:16+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.199105.xyz/tags/%E6%88%AA%E5%9B%BE/</loc>
     <lastmod>2024-02-25T20:26:16+08:00</lastmod>
   </url><url>
     <loc>https://blog.199105.xyz/tags/%E6%B8%B8%E6%88%8F/</loc>
