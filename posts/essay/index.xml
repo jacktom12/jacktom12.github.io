@@ -523,7 +523,13 @@
 </span></span><span class="line"><span class="cl">0 */2 * * * /root/备份脚本.sh
 </span></span></code></pre></td></tr></table>
 </div>
-</div>]]></content:encoded>
+</div><blockquote>
+<blockquote>
+<p>PS nginx 或者cloudflare 都有附件上传的默认大小控制，大部分是100M 所以有的时候还要设置下
+client_max_body_size 500M;</p>
+</blockquote>
+</blockquote>
+]]></content:encoded>
     </item>
     <item>
       <title>我们太太的客厅 冰心</title>
