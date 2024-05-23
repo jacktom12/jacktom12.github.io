@@ -340,6 +340,7 @@
 <a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240510142752.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240510142752.png"></a>
 <a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240520093926.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240520093926.png"></a>
 <a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240520192402.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240520192402.png"></a>
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240523194050.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240523194050.png"></a>
 
 </div>
 </body>
@@ -947,7 +948,7 @@
 </div><blockquote>
 <blockquote>
 <p>PS nginx 或者cloudflare 都有附件上传的默认大小控制，大部分是100M 所以有的时候还要设置下
-client_max_body_size 500M;</p>
+client_max_body_size 50M;</p>
 </blockquote>
 </blockquote>
 ]]></content:encoded>
