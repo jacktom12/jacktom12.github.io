@@ -6,8 +6,83 @@
     <description>Recent content on Wen&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 14 May 2024 15:09:32 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2024 07:22:56 +0800</lastBuildDate>
     <atom:link href="https://blog.199105.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>外星也难民</title>
+      <link>https://blog.199105.xyz/posts/photo/%E5%A4%96%E6%98%9F%E4%B9%9F%E9%9A%BE%E6%B0%91/</link>
+      <pubDate>Sat, 08 Jun 2024 07:22:56 +0800</pubDate>
+      <guid>https://blog.199105.xyz/posts/photo/%E5%A4%96%E6%98%9F%E4%B9%9F%E9%9A%BE%E6%B0%91/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js"></script>
+</head>
+<body>
+
+<div data-nanogallery2='{
+	 "thumbnailDisplayTransition":          "none",
+     "thumbnailDisplayTransitionDuration":  50,
+     "thumbnailDisplayInterval":            15,
+     
+     
+     "galleryDisplayTransition":            "none",
+     "galleryDisplayTransitionDuration":    50,
+     "galleryDisplayMode": "rows",
+     "galleryMaxRows": 3,
+      
+     
+     "thumbnailWidth": "300",
+     "thumbnailHeight": "auto",
+      
+     
+     "thumbnailDisplayTransition": "none",
+     "thumbnailDisplayInterval": 10,
+     "thumbnailDisplayOutsideScreen": "false",
+     "eventsDebounceDelay": 10,
+     "thumbnailL1BorderHorizontal": 0,
+     "thumbnailL1BorderVertical": 0,
+     "thumbnailLabel": {
+        "titleFontSize": "0.6em"
+     },
+     "thumbnailGutterWidth": 20,
+     "thumbnailGutterHeight": 20,
+     
+     "thumbnailHoverEffect2": "image_scale_1.00_1.10|label_backgroundColor_rgba(0,0,0,0)_rgba(255,255,255,0)",
+     "galleryTheme": {
+        "thumbnail": {
+            "borderRadius": "30px"
+        }
+     },
+     "thumbnailToolbarImage": {
+        "topLeft": "",
+        "topRight": "",
+        "bottomLeft": "",
+        "bottomRight": ""
+     },
+     "viewerToolbar":   {
+        "display": true,
+        "standard": "label"
+     },
+     "viewerTools":     {
+        "topLeft":    "pageCounter, playPauseButton",
+        "topRight":   "downloadButton, rotateLeft, zoomButton, fullscreenButton, closeButton"
+     },
+     "viewerGalleryTWidth": 40,
+     "viewerGalleryTHeight": 40
+}'>
+    
+<a href="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240608072158.png" data-ngThumb="https://cdn.jsdelivr.net/gh/jacktom12/blogPics@main/20240608072158.png"></a>
+
+</div>
+</body>
+</html>
+]]></content:encoded>
+    </item>
     <item>
       <title>随从大师</title>
       <link>https://blog.199105.xyz/posts/photo/%E9%9A%8F%E4%BB%8E%E5%A4%A7%E5%B8%88/</link>
