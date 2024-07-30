@@ -18,9 +18,7 @@
   <source src="music/片尾曲.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
-<pre><code> they say surrender 
-</code></pre>
-<p>they say it must have been surrender</p>
+<p><code>they say surrender</code></p>
 <p>they cannot see how i could love a man like i love you</p>
 <p>I tell them all that there is to remember</p>
 <p>and i don′t recall anything but your tenderness true</p>
@@ -45,6 +43,7 @@
 <p>all i recall is the fire that burns in our eyes</p>
 <p>i know - we will be always together</p>
 <p>forever is only a drop in the ocean of sighs</p>
+<p><code>the end </code></p>
 ]]></content:encoded>
     </item>
   </channel>
