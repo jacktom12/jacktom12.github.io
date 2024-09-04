@@ -1086,8 +1086,8 @@ client_max_body_size 50M;</p>
 <li>一次显示整个文件 :<code>$ cat filename</code></li>
 <li>从键盘创建一个文件 :<code>$cat &gt; filename</code> 以<code>ctrl+d</code>作为输入结束</li>
 <li>将几个文件合并为一个文件：<code>$cat file1 file2 &gt; file</code>只能创建新文件,不能编辑已有文件.</li>
-<li>将一个日志文件的内容追加到另外一个 :<code>$cat -n textfile1 &gt; textfile2</code></li>
-<li>清空一个日志文件:<code>$cat : &gt;textfile2</code></li>
+<li>将一个日志文件的内容追加到另外一个 :<code>$cat -n textfile1 &gt;&gt; textfile2</code></li>
+<li>清空一个日志文件:<code>&gt;textfile2</code></li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
