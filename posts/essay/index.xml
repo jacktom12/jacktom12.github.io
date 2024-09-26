@@ -6,8 +6,272 @@
     <description>Recent content in 📕随笔 on Wen&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 30 Jul 2024 19:34:29 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Sep 2024 13:47:14 +0800</lastBuildDate>
     <atom:link href="https://blog.199105.xyz/posts/essay/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自建图床</title>
+      <link>https://blog.199105.xyz/posts/essay/%E8%87%AA%E5%BB%BA%E5%9B%BE%E5%BA%8A/</link>
+      <pubDate>Fri, 27 Sep 2024 13:47:14 +0800</pubDate>
+      <guid>https://blog.199105.xyz/posts/essay/%E8%87%AA%E5%BB%BA%E5%9B%BE%E5%BA%8A/</guid>
+      <description>电报最近不允许白嫖它的图床了。</description>
+      <content:encoded><![CDATA[<ol>
+<li>在 CentOS 上设置文件上传服务
+首先，确保你的 CentOS 服务器上安装了 Node.js 和 npm，然后你可以安装 Express 和 multer（一个用于处理 multipart/form-data 的中间件）。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 安装 Node.js（如果还没有安装的话）
+</span></span><span class="line"><span class="cl">sudo yum install -y nodejs
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 安装 Express 和 multer
+</span></span><span class="line"><span class="cl">npm install express multer
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后，你可以创建一个简单的上传服务 server.js 文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="k">const</span> <span class="n">express</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">multer</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">&#39;multer&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">path</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">cors</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s1">&#39;cors&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">app</span> <span class="o">=</span> <span class="n">express</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">PORT</span> <span class="o">=</span> <span class="mi">3000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">使用</span> <span class="n">CORS</span> <span class="err">允许跨域请求</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">cors</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="n">origin</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="err">允许的来源（你的前端地址）</span>
+</span></span><span class="line"><span class="cl">    <span class="n">methods</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;POST&#39;</span><span class="p">],</span> <span class="o">//</span> <span class="err">允许的请求方法</span>
+</span></span><span class="line"><span class="cl">    <span class="n">allowedHeaders</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Authorization&#39;</span><span class="p">]</span> <span class="o">//</span> <span class="err">允许的请求头</span>
+</span></span><span class="line"><span class="cl"><span class="p">}));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">设置文件存储配置</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">storage</span> <span class="o">=</span> <span class="n">multer</span><span class="o">.</span><span class="n">diskStorage</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="n">destination</span><span class="p">:</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="n">cb</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cb</span><span class="p">(</span><span class="n">null</span><span class="p">,</span> <span class="s1">&#39;uploads/&#39;</span><span class="p">);</span> <span class="o">//</span> <span class="err">保存上传文件的目录</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filename</span><span class="p">:</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="n">cb</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="o">//</span> <span class="err">生成带时间戳的文件名</span>
+</span></span><span class="line"><span class="cl">        <span class="k">const</span> <span class="n">uniqueSuffix</span> <span class="o">=</span> <span class="n">Date</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;-&#39;</span> <span class="o">+</span> <span class="n">Math</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">Math</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1E9</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">const</span> <span class="n">extension</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">extname</span><span class="p">(</span><span class="n">file</span><span class="o">.</span><span class="n">originalname</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cb</span><span class="p">(</span><span class="n">null</span><span class="p">,</span> <span class="n">uniqueSuffix</span> <span class="o">+</span> <span class="n">extension</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">upload</span> <span class="o">=</span> <span class="n">multer</span><span class="p">({</span> <span class="n">storage</span><span class="p">:</span> <span class="n">storage</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">用户名和密码</span> <span class="p">(</span><span class="err">你可以在这里定义自己的用户名和密码</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">USERNAME</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">PASSWORD</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">简单的授权中间件</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">authenticate</span> <span class="o">=</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">next</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="n">authHeader</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">authorization</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">authHeader</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">401</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span> <span class="n">message</span><span class="p">:</span> <span class="s1">&#39;未授权：缺少授权头&#39;</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">检查用户名和密码</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="p">[</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">]</span> <span class="o">=</span> <span class="n">Buffer</span><span class="o">.</span><span class="n">from</span><span class="p">(</span><span class="n">authHeader</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;base64&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">toString</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">username</span> <span class="o">===</span> <span class="n">USERNAME</span> <span class="o">&amp;&amp;</span> <span class="n">password</span> <span class="o">===</span> <span class="n">PASSWORD</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">next</span><span class="p">();</span> <span class="o">//</span> <span class="err">验证成功，继续处理</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">403</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span> <span class="n">message</span><span class="p">:</span> <span class="s1">&#39;用户名或密码错误&#39;</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">上传文件路由，使用授权中间件</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;/upload&#39;</span><span class="p">,</span> <span class="n">authenticate</span><span class="p">,</span> <span class="n">upload</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="s1">&#39;files&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">req</span><span class="o">.</span><span class="n">files</span> <span class="o">||</span> <span class="n">req</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span> <span class="n">message</span><span class="p">:</span> <span class="s1">&#39;没有文件被上传&#39;</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">const</span> <span class="n">files</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">file</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">{</span> <span class="n">path</span><span class="p">:</span> <span class="err">`</span><span class="o">/</span><span class="n">uploads</span><span class="o">/$</span><span class="p">{</span><span class="n">file</span><span class="o">.</span><span class="n">filename</span><span class="p">}</span><span class="err">`</span> <span class="p">};</span> <span class="o">//</span> <span class="err">使用带时间戳的文件名</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span> <span class="n">files</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;文件上传失败:&#39;</span><span class="p">,</span> <span class="n">error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">({</span> <span class="n">message</span><span class="p">:</span> <span class="s1">&#39;服务器内部错误&#39;</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">提供静态文件服务</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;/uploads&#39;</span><span class="p">,</span> <span class="n">express</span><span class="o">.</span><span class="k">static</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">__dirname</span><span class="p">,</span> <span class="s1">&#39;uploads&#39;</span><span class="p">)));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">PORT</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="err">`服务器已启动，监听端口</span> <span class="o">$</span><span class="p">{</span><span class="n">PORT</span><span class="p">}</span><span class="err">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>运行服务器：当然端口要开放。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">node server.js
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>这样每次都手动运行麻烦，直接改成随即启动的服务，centos版本设置方法：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="mf">1.</span><span class="err">创建服务文件：</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">image</span><span class="o">-</span><span class="n">uploader</span><span class="o">.</span><span class="n">service</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.</span><span class="err">编写服务文件内容：</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">Unit</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">Description</span><span class="o">=</span><span class="ne">Image</span> <span class="n">Uploader</span> <span class="n">Service</span>
+</span></span><span class="line"><span class="cl"><span class="n">After</span><span class="o">=</span><span class="n">network</span><span class="o">.</span><span class="n">target</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">Service</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">Type</span><span class="o">=</span><span class="n">simple</span>
+</span></span><span class="line"><span class="cl"><span class="n">User</span><span class="o">=</span><span class="n">your_user</span> <span class="c1">#root可以不设置这一行</span>
+</span></span><span class="line"><span class="cl"><span class="n">WorkingDirectory</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">made</span>
+</span></span><span class="line"><span class="cl"><span class="n">ExecStart</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">node</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">made</span><span class="o">/</span><span class="n">server</span><span class="o">.</span><span class="n">js</span>
+</span></span><span class="line"><span class="cl"><span class="n">Restart</span><span class="o">=</span><span class="n">on</span><span class="o">-</span><span class="n">failure</span>
+</span></span><span class="line"><span class="cl"><span class="ne">Environment</span><span class="o">=</span><span class="n">NODE_ENV</span><span class="o">=</span><span class="n">production</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">Install</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">WantedBy</span><span class="o">=</span><span class="n">multi</span><span class="o">-</span><span class="n">user</span><span class="o">.</span><span class="n">target</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.</span><span class="err">重新加载</span><span class="n">systemd配置</span><span class="err">：</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">daemon</span><span class="o">-</span><span class="n">reload</span>
+</span></span><span class="line"><span class="cl"><span class="mf">4.</span><span class="err">启动服务：</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">image</span><span class="o">-</span><span class="n">uploader</span>
+</span></span><span class="line"><span class="cl"><span class="mf">5.</span><span class="err">设置服务开机启动：</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">image</span><span class="o">-</span><span class="n">uploader</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span><span class="err">检查服务状态：</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">status</span> <span class="n">image</span><span class="o">-</span><span class="n">uploader</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后前端改改就差不多了</p>
+<p>如果前端页面js出现缓存一直难于清除，除了浏览器上操作强制刷新，F12后台进行勾选不缓存之外，还有一个情况要考虑，就是如果你是cf代理了，那就新建页面规则进行特定域名设置cache level bypass。这样就可以秒同步了。</p>
+<ul>
+<li>效果图</li>
+</ul>
+<p><img loading="lazy" src="https://jpg.199105.xyz/uploads/1725705264547-89491626.webp" alt="images"  />
+</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>电影亡灵插曲</title>
       <link>https://blog.199105.xyz/posts/essay/%E7%94%B5%E5%BD%B1%E4%BA%A1%E7%81%B5%E6%8F%92%E6%9B%B2/</link>
