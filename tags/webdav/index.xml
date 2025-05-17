@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>webdav on Wen&#39;s Blog</title>
+    <link>https://blog.199105.xyz/tags/webdav/</link>
+    <description>Recent content in webdav on Wen&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 08 Mar 2024 10:31:50 +0800</lastBuildDate>
+    <atom:link href="https://blog.199105.xyz/tags/webdav/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>webdav备份数据到云盘</title>
+      <link>https://blog.199105.xyz/posts/essay/webdav%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%88%B0%E4%BA%91%E7%9B%98/</link>
+      <pubDate>Fri, 08 Mar 2024 10:31:50 +0800</pubDate>
+      <guid>https://blog.199105.xyz/posts/essay/webdav%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%88%B0%E4%BA%91%E7%9B%98/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h2 id="安装reclone">安装reclone</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl https://rclone.org/install.sh | sudo bash
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="配置reclone链接webdav">配置reclone链接webdav</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> # 注意选择webdav (52)---- 7 others server https://xxx/dav (alist里新建一个用户，给定指定的目录)
+</span></span><span class="line"><span class="cl">rclone config 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#配置完后进行测试，文件名太多了，还是文件夹方式列出
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rclone lsd 新建的云盘名:/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="备份脚本">备份脚本</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 要备份的本地目录</span>
+</span></span><span class="line"><span class="cl"><span class="nv">src</span><span class="o">=</span><span class="s2">&#34;/root/需要打包的文件目录&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># WebDAV 远程目录</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dest</span><span class="o">=</span><span class="s2">&#34;yunpan:/目标目录&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取当前日期和时间作为时间戳</span>
+</span></span><span class="line"><span class="cl"><span class="nv">timestamp</span><span class="o">=</span><span class="k">$(</span>date +%Y%m%d%H%M%S<span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建带时间戳的压缩包</span>
+</span></span><span class="line"><span class="cl">tar -czf backup_<span class="nv">$timestamp</span>.tar.gz <span class="nv">$src</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 上传到 WebDAV</span>
+</span></span><span class="line"><span class="cl">rclone copy backup_<span class="nv">$timestamp</span>.tar.gz <span class="nv">$dest</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除本地压缩包</span>
+</span></span><span class="line"><span class="cl">rm backup_<span class="nv">$timestamp</span>.tar.gz
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="定时任务">定时任务</h2>
+<ul>
+<li>crontab -e</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 每隔2个小时自动跑一次脚本
+</span></span><span class="line"><span class="cl">0 */2 * * * /root/备份脚本.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<blockquote>
+<p>PS nginx 或者cloudflare 都有附件上传的默认大小控制，大部分是100M 所以有的时候还要设置下
+client_max_body_size 50M;</p>
+</blockquote>
+</blockquote>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
