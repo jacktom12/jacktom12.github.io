@@ -1,0 +1,55 @@
+.neodb-card {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+  transition: transform 0.2s;
+}
+
+.neodb-card:hover {
+  transform: scale(1.02);
+}
+
+.neodb-cover {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.neodb-content {
+  flex: 1;
+}
+
+.neodb-title {
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.neodb-subtitle {
+  font-size: 0.95em;
+  color: #777;
+}
+
+.neodb-rating {
+  color: #f39c12;
+  margin-top: 8px;
+}
+
+.neodb-comment {
+  margin: 12px 0;
+  font-style: italic;
+  color: #444;
+}
+
+.neodb-link {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
